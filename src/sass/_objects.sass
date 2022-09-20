@@ -1,0 +1,753 @@
+#objects
+  .orbitvu-main
+    position: absolute
+    width: 200px
+    // height: 548px
+    bottom: 10px
+    left: 50%
+    transform: translateX(-50%)
+  .orbitvu-main__container
+    position: relative
+    overflow: hidden
+    & img
+      width: 100%
+    //& .orbitvu-viewer
+    //  @extend %absolute-center
+    //  width: 500px
+    //  height: 500px
+  #orbitvu-main__container_360
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 2
+    width: 150%!important
+
+
+
+  .main-presentation
+    display: flex
+    align-items: center
+    cursor: pointer
+    & p
+      font-family: "AkzidenzGroteskPro-BoldCn", sans-serif
+      font-weight: 700
+      font-size: 25px
+      line-height: 100%
+      letter-spacing: 0.02em
+      color: $blue
+      margin-right: 20px
+      transition: all .2s
+    &:hover
+      & p
+        color: white
+      & .main-play
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30ZM1.2 30C1.2 45.9058 14.0942 58.8 30 58.8C45.9058 58.8 58.8 45.9058 58.8 30C58.8 14.0942 45.9058 1.2 30 1.2C14.0942 1.2 1.2 14.0942 1.2 30Z' fill='white'/%3E%3Cpath d='M47.9998 30.0004L20.9997 45.5886L21 14.4117L47.9998 30.0004Z' fill='white'/%3E%3C/svg%3E")
+
+
+  .main-play
+    width: 60px
+    height: 60px
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30ZM1.2 30C1.2 45.9058 14.0942 58.8 30 58.8C45.9058 58.8 58.8 45.9058 58.8 30C58.8 14.0942 45.9058 1.2 30 1.2C14.0942 1.2 1.2 14.0942 1.2 30Z' fill='%230DAABB'/%3E%3Cpath d='M47.9998 30.0004L20.9997 45.5886L21 14.4117L47.9998 30.0004Z' fill='%230DAABB'/%3E%3C/svg%3E")
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center center
+    transition: all .2s
+
+  
+  //SECTION ABOUT
+#about
+  //padding:
+  background: #F8F8F8
+  padding-bottom: 100px
+  //margin-bottom: 120px
+.area
+  grid-template-columns: repeat(3, auto)
+  justify-content: space-between 
+  grid-gap: 50px 0
+.area-item
+  //background: #F8F8F8
+  //box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.06)
+  //border-radius: 50%
+.area-img
+  width: 180px
+  height: 180px
+  background: #F8F8F8
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.06)
+  border-radius: 50%
+  position: relative
+  margin: auto
+  & img
+    position: absolute
+    @extend %absolute-center
+
+.area-name
+  font-family: "AkzidenzGroteskPro-RegularCn", sans-serif
+  font-size: 30px
+  line-height: 100%
+  text-align: center
+  letter-spacing: 0.01em
+  font-weight: 400
+  color: $dark-grey
+  padding-top: 20px
+.area-more
+  font-family: "AkzidenzGroteskPro-RegularCn", sans-serif
+  font-size: 26px
+  line-height: 100%
+  letter-spacing: 0.01em
+  padding-top: 90px
+  position: relative
+  padding-left: 30px
+  color: $pink
+  & span
+    position: absolute
+    bottom: 3px
+    left: 0
+    width: 5px
+    height: 5px
+    background: $pink
+    border-radius: 50%
+    &:first-child
+      left: 0
+    &:nth-last-child(2)
+      left: calc(0px + 10px)
+    &:last-child
+      left: calc(0px + 20px)
+
+//SECTION equipment
+#equipment
+  padding-bottom: 120px
+  background: white
+.equipment-item
+  justify-content: space-between
+  align-items: flex-end
+  &:last-child
+    flex-direction: row-reverse
+    & .equipment-img
+      width: 100%
+      max-width: 260px
+.title-usage
+  margin-bottom: 60px
+  &._mob
+    display: none
+.equipment-info
+  flex-basis: 55%
+.equipment-img
+  flex-basis: 45%
+.btn-equipment
+  margin-top: 45px
+  max-width: 250px
+  & .btn-bg
+    border-color: $blue
+  & .btn-text
+    color: $blue
+    padding: 15px 0
+    text-align: center
+  &:hover
+    & .btn-bg
+      background: $blue
+      z-index: 1
+    & .btn-text
+      color: white
+      z-index: 2
+
+.equipment-img
+  justify-content: center
+  align-items: center
+  //width: 100%
+  //max-width: 260px
+  & img
+    width: 100%
+
+//SECTION PRICE
+#price
+  background: #F8F8F8
+  padding-bottom: 115px
+.price-content
+  //grid-template-columns: repeat(3, minmax(auto, 280px))
+  //justify-content: space-between
+  margin-bottom: 45px
+
+  grid-template-columns: repeat(3, 1fr)
+  justify-content: center
+  grid-gap: 0 20px
+
+.price-item
+  background: #F8F8F8
+  box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.06)
+  padding: 30px 25px
+.price-name
+  font-family: "AkzidenzGroteskPro-RegularCn", sans-serif
+  font-weight: 400
+  font-size: 30px
+  line-height: 100%
+  text-align: center
+  letter-spacing: 0.01em
+  color: $dark-grey
+  margin-bottom: 10px
+.price-text
+  font-family: "AkzidenzGroteskPro-Regular", sans-serif
+  font-weight: 400
+  font-size: 16px
+  line-height: 110%
+  text-align: center
+  letter-spacing: 0.01em
+  color: #595959
+  opacity: 0.5
+  margin-bottom: 30px
+.price-title
+  font-family: "AkzidenzGroteskPro-RegularCn", sans-serif
+  font-size: 40px
+  line-height: 100%
+  letter-spacing: 0.02em
+  font-weight: 400
+  text-align: center
+  color: $blue
+
+.btn-price, .btn-cta
+  max-width: 280px
+  & .btn-bg
+    background: $pink
+    border-color: $pink
+  & .btn-text
+    color: white
+    padding: 15px 0
+    text-align: center
+  &:hover
+    & .btn-bg
+      background: $blue
+      border-color: $blue
+    & .btn-text
+      color: white
+
+//SECTION PORTFOLIO
+#portfolio
+  background: white
+  padding-bottom: 95px
+  overflow: hidden
+.filter
+  justify-content: space-between
+  margin-bottom: 50px
+.filter-area
+  background: none
+  border: none
+  outline: none
+  font-family: "AkzidenzGroteskPro-BoldCn", sans-serif
+  font-weight: 700
+  font-size: 20px
+  line-height: 100%
+  letter-spacing: 0.02em
+  color: $dark-grey
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  position: relative
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.41 0L6 4.94467L10.59 0L12 1.52227L6 8L0 1.52227L1.41 0Z' fill='%23595959'/%3E%3C/svg%3E")
+  background-position: center right
+  background-size: 12px 8px
+  background-repeat: no-repeat
+  padding-right: 22px
+  cursor: pointer
+  transition: all .2s
+  &:hover
+    color: $blue
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.41 0L6 4.94467L10.59 0L12 1.52227L6 8L0 1.52227L1.41 0Z' fill='%230DAABB'/%3E%3C/svg%3E")
+  & option
+    color: $dark-grey
+    &:first-child
+      display: none
+  //&:focus
+  //  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.59 8L6 3.05533L1.41 8L0 6.47773L6 0L12 6.47773L10.59 8Z' fill='%2311adbc'/%3E%3C/svg%3E")
+  //&:not(:focus)
+  //  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.41 0L6 4.94467L10.59 0L12 1.52227L6 8L0 1.52227L1.41 0Z' fill='%23595959'/%3E%3C/svg%3E")
+    //background: red
+
+
+.filter-sort
+  width: 100%
+  max-width: 420px
+  justify-content: space-between
+  & input
+    position: absolute
+    z-index: -1
+    opacity: 0
+  & label
+    font-family: "AkzidenzGroteskPro-BoldCn", sans-serif
+    font-weight: 700
+    font-size: 20px
+    line-height: 100%
+    letter-spacing: 0.02em
+    color: $dark-grey
+    cursor: pointer
+    transition: all .2s
+    position: relative
+    padding: 0 5px
+    &:before
+      content: ""
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: -1px
+      width: 0
+      height: 1px
+      background: $blue
+      transition: all .2s
+    &:hover
+      color: $blue
+      &:before
+        width: 100%
+input:checked+label
+  color: $blue
+  &:before
+    width: 100%
+
+.goods
+  display: block
+  //grid-template-columns: repeat(3, minmax(auto, 1fr))
+  //justify-content: space-between
+  //grid-gap: 20px
+  position: relative
+  margin-bottom: 50px
+.goods-item
+  display: flex!important
+  padding: 40px
+  justify-content: center
+  align-items: center
+  box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.06)
+  position: relative
+  cursor: pointer
+  transition: all .3s ease-in-out
+  //height: 100%
+  width: auto!important
+  & img
+    //max-width: 100%
+    //max-height: 200px
+    width: 100%
+    transition: all .3s ease-in-out
+  &:hover
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.06)
+    & img
+      transform: scale(1.1)
+.goods-type
+  position: absolute
+  bottom: 15px
+  right: 15px
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  background: $blue
+  & span
+    position: relative
+    display: block
+    width: 100%
+    height: 100%
+    &:before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+      font-family: "AkzidenzGroteskPro-BoldCn", sans-serif
+      font-size: 20px
+      line-height: 100%
+      letter-spacing: 0.02em
+      color: white
+      font-weight: 700
+    &._video
+      &:before
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='14' viewBox='0 0 12 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 7L0 13.9282L0 0.0717969L12 7Z' fill='white'/%3E%3C/svg%3E")
+        width: 12px
+        height: 14px
+        left: 56%
+    &._360
+      &:before
+        content: "360°"
+    &._photo
+      &:before
+        content: "2D"
+.pagination
+  align-items: center
+  padding-left: 10px
+  & li
+    display: block
+    padding: 0 5px
+    list-style: none
+    &:first-child, &:last-child
+      & .pagination-link
+        font-size: 16px
+        color: $blue
+        position: relative
+        border: none
+        width: auto
+        height: auto
+        &:before
+          position: absolute
+          content: ""
+          width: 13px
+          height: 20px
+          top: 50%
+          transform: translateY(-50%)
+          right: calc(100% + 10px)
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='20' viewBox='0 0 13 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 2.35L4.96491 10L13 17.65L10.5263 20L0 10L10.5263 0L13 2.35Z' fill='%230DAABB'/%3E%3C/svg%3E")
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center center
+          transition: all .3s
+        &:hover
+          color: $dark-grey
+          background: none
+          &:before
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='20' viewBox='0 0 13 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 2.35L4.96491 10L13 17.65L10.5263 20L3.91676e-07 10L10.5263 0L13 2.35Z' fill='%23595959'/%3E%3C/svg%3E")
+    &:first-child
+      padding-right: 25px
+    &:last-child
+      padding-left: 25px
+      & .pagination-link
+        &:before
+          right: auto
+          left: calc(100% + 10px)
+          transform: translateY(-50%) rotate(180deg)
+
+//SECTION COOPERATION
+.sub-title__cooperation
+  padding: 60px 0
+#cooperation
+  background: #F8F8F8
+  padding-bottom: 100px
+.cooperation-content
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 50px 0
+  margin-bottom: 80px
+.cooperation-text
+  font-family: "AkzidenzGroteskPro-RegularCn", sans-serif
+  font-weight: 400
+  font-size: 25px
+  line-height: 130%
+  letter-spacing: 0.02em
+  color: $dark-grey
+  padding-left: 10px
+.cooperation-bottom
+  align-items: center
+  justify-content: space-between
+.cooperation-info
+  font-family: "AkzidenzGroteskPro-RegularCn", sans-serif
+  font-weight: 400
+  font-size: 30px
+  line-height: 100%
+  letter-spacing: 0.01em
+  color: $dark-grey
+  & span
+    padding-top: 10px
+    font-size: 25px
+  &._mob
+    display: none
+
+.btn-cta
+  & .btn-text
+    padding: 15px 20px
+
+//SECTION CUSTOMERS
+#customers
+  background: white
+  padding-bottom: 100px
+.customers-content
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 30px
+  & img
+    width: 100%
+
+#contacts
+  padding-bottom: 30px
+  background: #F8F8F8
+.map
+  height: 540px
+  position: relative
+  & iframe
+    width: 100%
+    height: 100%
+    border: none
+.contacts-block
+  background: rgba($dark-grey, .9)
+  position: absolute
+  padding: 30px 60px 30px 30px
+  @extend %right-center
+
+.contacts-item
+  margin-bottom: 20px
+  & p
+    font-size: 14px
+    line-height: 18px
+    letter-spacing: 0.02em
+  &:last-child
+    margin-bottom: 0
+  &._messengers
+    & .contacts-messengers
+      margin-right: 45px
+      & a
+        display: block
+        margin-bottom: 7px
+        @extend %hover-blue
+      &:last-child
+        margin-right: 0
+.contacts-title
+  color: $blue
+  font-family: "AkzidenzGroteskPro-Regular", sans-serif
+.contacts-text
+  font-family: "AkzidenzGroteskPro-RegularCn", sans-serif
+  color: white
+  &._hover
+    @extend %hover-blue
+
+.contacts-text__phone
+  display: block
+  margin-bottom: 5px
+  &:last-child
+    margin-bottom: 0
+
+.popup
+  position: fixed
+  bottom: 300vh
+  left: 0
+  width: 100%
+  height: 100%
+  background: $dark-grey
+  z-index: 3
+  transition: all .4s
+  overflow-y: scroll
+  &.active
+    bottom: 0
+  form
+    max-width: 600px
+    margin: auto
+.popup-content
+  padding-top: 75px
+  
+.popup-close
+  width: 42px
+  height: 36px
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='42' height='36' viewBox='0 0 42 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='41' height='35' rx='4.5' fill='%23595959' stroke='%23595959'/%3E%3Cpath d='M37.25 1H4.75C2.67969 1 1 2.6317 1 4.64286V31.3571C1 33.3683 2.67969 35 4.75 35H37.25C39.3203 35 41 33.3683 41 31.3571V4.64286C41 2.6317 39.3203 1 37.25 1ZM30.7187 23.0469C31.0937 23.4112 31.0937 24.0031 30.7187 24.3674L27.5547 27.4411C27.1797 27.8054 26.5703 27.8054 26.1953 27.4411L21 22.3487L15.8047 27.4411C15.4297 27.8054 14.8203 27.8054 14.4453 27.4411L11.2813 24.3674C10.9063 24.0031 10.9063 23.4112 11.2813 23.0469L16.5234 18L11.2813 12.9531C10.9063 12.5888 10.9063 11.9969 11.2813 11.6326L14.4453 8.55893C14.8203 8.19464 15.4297 8.19464 15.8047 8.55893L21 13.6513L26.1953 8.55893C26.5703 8.19464 27.1797 8.19464 27.5547 8.55893L30.7187 11.6326C31.0937 11.9969 31.0937 12.5888 30.7187 12.9531L25.4766 18L30.7187 23.0469Z' fill='%230DAABB'/%3E%3C/svg%3E")
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  transition: all .2s
+  cursor: pointer
+  margin: 0 auto 80px auto
+  &:hover
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='42' height='36' viewBox='0 0 42 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='41' height='35' rx='4.5' fill='%230DAABB' stroke='%230DAABB'/%3E%3Cpath d='M37.25 1H4.75C2.67969 1 1 2.6317 1 4.64286V31.3571C1 33.3683 2.67969 35 4.75 35H37.25C39.3203 35 41 33.3683 41 31.3571V4.64286C41 2.6317 39.3203 1 37.25 1ZM30.7187 23.0469C31.0937 23.4112 31.0937 24.0031 30.7187 24.3674L27.5547 27.4411C27.1797 27.8054 26.5703 27.8054 26.1953 27.4411L21 22.3487L15.8047 27.4411C15.4297 27.8054 14.8203 27.8054 14.4453 27.4411L11.2813 24.3674C10.9063 24.0031 10.9063 23.4112 11.2813 23.0469L16.5234 18L11.2813 12.9531C10.9063 12.5888 10.9063 11.9969 11.2813 11.6326L14.4453 8.55893C14.8203 8.19464 15.4297 8.19464 15.8047 8.55893L21 13.6513L26.1953 8.55893C26.5703 8.19464 27.1797 8.19464 27.5547 8.55893L30.7187 11.6326C31.0937 11.9969 31.0937 12.5888 30.7187 12.9531L25.4766 18L30.7187 23.0469Z' fill='%23595959'/%3E%3C/svg%3E")
+.popup-text
+  font-family: "AkzidenzGroteskPro-RegularCn", sans-serif
+  font-size: 40px
+  line-height: 100%
+  text-align: center
+  letter-spacing: 0.02em
+  color: white
+  max-width: 740px
+  margin: 0 auto 60px auto
+
+
+.popup-presentation
+  overflow-y: scroll
+  background: rgba(0,0,0,.7)
+#popup-presentation_container
+  width: 800px
+  height: calc(800px * 0.5625)
+  margin: 0 auto
+  & iframe
+    width: 100%
+    height: 100%
+    border: none!important
+
+.popup-portfolio
+  overflow-y: scroll
+  background: rgb(255, 255, 255)
+  & .popup-close
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='40' height='34' viewBox='0 0 40 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30.0671 21.6882L30.0655 21.6867L25.1975 17L30.0655 12.3133L30.0671 12.3118C30.6443 11.7511 30.6443 10.8346 30.0671 10.274L26.9031 7.20029C26.3341 6.64752 25.4159 6.64752 24.8469 7.20029L24.8453 7.20186L20 11.9512L15.1547 7.20185L15.1531 7.20029C14.5841 6.64752 13.6659 6.64752 13.0969 7.20029L9.93286 10.274C9.35571 10.8346 9.35571 11.7511 9.93285 12.3118L9.93447 12.3133L14.8025 17L9.93447 21.6867L9.93286 21.6882C9.35571 22.2489 9.35571 23.1654 9.93286 23.726L13.0969 26.7997C13.6659 27.3525 14.5841 27.3525 15.1531 26.7997L15.1547 26.7981L20 22.0488L24.8453 26.7981L24.8469 26.7997C25.4159 27.3525 26.3341 27.3525 26.9031 26.7997L30.0671 23.7261C30.6443 23.1654 30.6443 22.2489 30.0671 21.6882ZM3.75 0.5H36.25C38.0579 0.5 39.5 1.9214 39.5 3.64286V30.3571C39.5 32.0786 38.0579 33.5 36.25 33.5H3.75C1.94207 33.5 0.5 32.0786 0.5 30.3571V3.64286C0.5 1.9214 1.94207 0.5 3.75 0.5Z' stroke='%230DAABB'/%3E%3C/svg%3E")
+    &:hover
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='40' height='34' viewBox='0 0 40 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36.25 0H3.75C1.67969 0 0 1.6317 0 3.64286V30.3571C0 32.3683 1.67969 34 3.75 34H36.25C38.3203 34 40 32.3683 40 30.3571V3.64286C40 1.6317 38.3203 0 36.25 0ZM29.7188 22.0469C30.0938 22.4112 30.0938 23.0031 29.7188 23.3674L26.5547 26.4411C26.1797 26.8054 25.5703 26.8054 25.1953 26.4411L20 21.3487L14.8047 26.4411C14.4297 26.8054 13.8203 26.8054 13.4453 26.4411L10.2812 23.3674C9.90625 23.0031 9.90625 22.4112 10.2812 22.0469L15.5234 17L10.2812 11.9531C9.90625 11.5888 9.90625 10.9969 10.2812 10.6326L13.4453 7.55893C13.8203 7.19464 14.4297 7.19464 14.8047 7.55893L20 12.6513L25.1953 7.55893C25.5703 7.19464 26.1797 7.19464 26.5547 7.55893L29.7188 10.6326C30.0938 10.9969 30.0938 11.5888 29.7188 11.9531L24.4766 17L29.7188 22.0469Z' fill='%230DAABB'/%3E%3C/svg%3E")
+
+.orbitvu-viewer
+  width: 100%
+  height: 100%
+.popup-portfolio__content
+  display: flex
+  justify-content: center
+  align-items: center
+  width: max-content
+  margin: 0 auto
+  &._360
+    width: 500px
+    max-width: 500px
+    height: 500px
+  //& .orbitvu-viewer
+  //  width: 500px
+  //  max-width: 500px
+  //  height: 500px
+  &._video
+    border: none
+    width: 800px
+    height: calc(800px * 0.56)
+    & iframe
+      width: 100%
+      height: 100%
+      border: none
+
+
+.slick-track
+  display: flex
+  //grid-template-columns: 1fr 1fr 1fr
+.slick-list
+  height: auto!important
+  //overflow: hidden
+//.slick-arrow
+//  display: none
+//.slick-dots
+//  display: none
+.slick-track
+  display: flex
+  //grid-gap: 20px
+  //grid-template-columns: repeat(7, 1fr)
+  //margin: 0 10px
+.slick-slide
+  opacity: 0
+  pointer-events: none
+  //margin: 0 10px
+  transition: all .2s
+  outline: none
+
+  display: grid
+  grid-template-rows: repeat(2, 1fr)
+  grid-gap: 20px
+  &.slick-active
+    opacity: 1
+    pointer-events: auto
+  &>div
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-gap: 20px
+// .slick-slide__block
+//   display: grid
+//   grid-template-columns: repeat(3,1fr)
+//   grid-gap: 20px
+
+//.goods-item
+//  margin: 10px
+.slick-dots
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 50px
+  padding: 0
+  cursor: pointer
+  & li
+    list-style: none
+    padding: 0 5px
+    & button
+      display: inline-flex
+      font-family: "AkzidenzGroteskPro-Regular", sans-serif
+      font-weight: 400
+      font-size: 20px
+      line-height: 100%
+      letter-spacing: 0.01em
+      color: $dark-grey
+      transition: all .3s
+      border: 1px solid rgba($dark-grey, .05)
+      box-sizing: border-box
+      border-radius: 10px
+      width: 35px
+      height: 35px
+      justify-content: center
+      align-items: center
+      background: rgba(0,0,0,0)
+      outline: none
+      cursor: pointer
+      &:hover
+        background: $blue
+        color: white
+    &:first-child
+      padding-left: 0
+    &:last-child
+      padding-right: 0
+    &.slick-active
+      & button
+        background: $blue
+        color: white
+
+
+  &.slick-disabled
+    //background: none
+    //pointer-events: none!important
+    //&:hover
+    //  background: none
+
+.portfolio-nav
+  display: flex
+  justify-content: center
+  
+  button
+    height: auto
+    border: none
+    font-size: 1em
+    font-family: AkzidenzGroteskPro-Regular,sans-serif
+    background: #11adbc
+    color: #ffffff
+    display: block
+    padding: 10px 20px
+    border-radius: 4px
+    margin: 10px
+    transition-duration: 0.3s
+    cursor: pointer
+
+    &:hover
+      background: $pink 
+
+
+//THANKS
+.thanks
+  background: $dark-grey
+  height: 100vh
+.thanks-title
+  font-family: "AkzidenzGroteskPro-RegularCn", sans-serif
+  font-size: 64px
+  line-height: 100%
+  text-align: center
+  letter-spacing: 0.02em
+  margin-bottom: 30px
+  color: $blue
+.logo-thanks
+  display: block
+  width: 100%
+  max-width: 160px
+  padding: 30px 0 60px 0
+  margin: 0 auto
+  & img
+    width: 100%
+
+.thanks-text
+  font-family: "AkzidenzGroteskPro-RegularCn", sans-serif
+  font-size: 40px
+  line-height: 100%
+  text-align: center
+  letter-spacing: 0.02em
+  max-width: 650px
+  margin: 0 auto 60px auto
+  color: white
+.btn-price
+  margin: 0 auto
+
+.popup-action
+  & .popup-text
+    max-width: 620px
+.popup-action__img
+  width: 40px
+  margin: 0 auto
+
+.btn-action
+  & .btn-text
+    display: flex
+    justify-content: center
+    align-items: center
+    & img
+      margin-left: 5px

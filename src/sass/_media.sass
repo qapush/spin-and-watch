@@ -1,0 +1,712 @@
+@media screen and (max-width: 1200px)
+  .container
+    padding: 0 30px 0 40px
+  .slogan
+    font-size: 7rem
+
+  .slogan__subtitle
+    font-size: 3rem
+  .main
+    &:before
+      width: 204px
+      height: 365px
+      bottom: -182px
+  .price-content
+    grid-gap: 0 15px
+  .price-item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 20px 10px
+  .price-name
+    font-size: 28px
+  .price-title
+    font-size: 36px
+
+
+  .container
+    padding: 0 10px 0 15px
+  .slogan
+    font-size: 6rem
+  .slogan__subtitle
+    font-size: 3rem
+    
+  .area
+    grid-gap: 20px
+  .area-img
+    width: 110px
+    height: 110px
+  .goods-item
+    padding: 8px
+  .filter-area
+    font-size: 14px
+    & label
+      font-size: 14px
+  .cooperation-number
+    max-width: 45px
+  .cooperation-text
+    font-size: 15px
+  
+  .popup-text
+    font-size: 28px
+  .popup-content
+    padding: 50px 10px 20px 10px
+  .popup-action
+    & .popup-text
+      max-width: 100%
+
+@media screen and (max-width: 1024px)
+
+  #tours
+    
+    .photos-desription
+      flex-direction: column
+    .photos-description__text
+      width: auto
+    .tours-description__showcase
+      width: 100%
+    #tours-description__krpano
+        max-width: 100%
+
+  .slick-slide
+    grid-gap: 15px
+    &>div
+      display: grid
+      grid-template-columns: repeat(2,1fr)
+      grid-gap: 20px
+
+    
+  .container
+    padding: 0 25px 0 50px
+  .sidebar
+    padding: 15px 10px 20px 15px
+  .sidebar-logo
+    max-width: 80px
+  .sidebar-mesh
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 2rem
+  .sidebar-mesh__link
+    width: 20px
+    height: 20px
+    margin-bottom: 20px
+    & span
+      display: none
+    &:before
+      width: 20px
+      height: 20px
+      padding: 0!important
+      top: 50%!important
+
+  .sidebar-content
+    padding-bottom: 30px
+    height: calc(var(--height-sidebar) * 100)
+  .burger
+    display: inline-flex
+  .nav
+    position: fixed
+    top: 0
+    left: -110%
+    width: 100%
+    height: 100vh
+    background: #595959
+    z-index: 1
+    transition: all .2s
+    &.active
+      left: 0
+  .nav-list
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+  .nav-link
+    font-size: 50px
+  .header-mesh
+    display: none
+  .header-mesh__menu
+    margin-top: 30px
+    display: block
+    flex-direction: row
+  .header-mesh__menu_content
+    display: flex
+    margin-top: 30px
+  .header
+    width: calc(100% - 100px)
+    margin-left: 100px
+    & .container
+      padding: 0 25px
+  .header-address
+    &._mob
+      display: none
+  .slogan
+    padding-left: 0
+
+  .btn-bg
+    transform: skew(-10deg)
+  .btn-text
+    font-size: 15px
+  .main
+    height: 600px
+  .orbitvu-main, .tour-example
+    width: 204px
+    height: 365px
+    bottom: -190px
+  .orbitvu-main__container, .tour-example__container
+    & .orbitvu-viewer
+      width: 350px
+      height: 350px
+  .main-content
+    padding-top: 100px
+    position: relative
+    & p
+      font-size: 20px
+    & .main-play
+      width: 48px
+      height: 48px
+  .title
+    padding: 80px 0 25px 0
+    font-size: 64px
+  .title-equipment
+    font-size: 48px
+  #about
+    margin-top: 140px
+    padding-bottom: 80px
+  .sub-title
+    font-size: 32px
+    padding: 40px 0
+  .area
+    grid-gap: 40px
+  .area-img
+    width: 144px
+    height: 144px
+    & img
+      max-height: 70%
+      max-width: 80%
+  .area-name
+    padding-top: 15px
+    font-size: 24px
+  .area-more
+    padding-top: 40px
+
+  #equipment
+    padding-bottom: 80px
+  .equipment-item
+    &:last-child
+      & .title
+        padding: 50px 0 25px 0
+      & .equipment-img
+        max-width: 210px
+  .equipment-img
+    //max-width: 210px
+  .equipment-info
+    flex-basis: 60%
+    & .text
+      font-size: 1.2rem
+  .btn-equipment
+    margin-top: 25px
+
+  #price
+    padding-bottom: 80px
+  .price-content
+    position: relative
+    height: 220px
+    overflow-x: scroll
+    margin-bottom: 15px
+    z-index: 1
+    margin-left: -15px
+  .price-item
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 100%
+    max-width: 240px
+    padding: 20px 25px
+    &:first-child
+      left: 15px
+    &:nth-child(2)
+      left: calc(15px + 260px)
+    &:last-child
+      left: calc(15px + 260px * 2)
+  .price-name
+    font-size: 24px
+    margin-bottom: 8px
+  .price-text
+    font-size: 1.2rem
+    margin-bottom: 25px
+  .price-title
+    font-size: 32px
+  .btn-price
+    max-width: 180px
+ 
+  #portfolio
+    padding-bottom: 80px
+  .goods-item
+    padding: 10px
+    //& img
+    //  max-width: 100%
+    //  max-height: 130px
+  .goods-type
+    width: 32px
+    height: 32px
+    right: 8px
+    bottom: 8px
+    & span
+      &:before
+        font-size: 16px
+  .goods
+    grid-gap: 14px
+  .filter-sort
+    max-width: 340px
+    & label
+      font-size: 16px
+      &:before
+        bottom: 0
+  .filter-area
+    font-size: 16px
+  .slick-dots li button
+    font-size: 16px
+    width: 28px
+    height: 28px
+  .slick-dots
+    padding: 0 20px 0 100px
+  .slick-arrow
+    width: 80px
+    height: 15px
+  //.pagination
+  //  & li
+  //    padding: 0 4px
+  //    &:first-child
+  //      padding-right: 10px
+  //    &:last-child
+  //      padding-left: 10px
+
+  #cooperation
+    padding-bottom: 75px
+  .sub-title__cooperation
+    padding: 5px 0 25px 0
+  .cooperation-item
+    justify-content: flex-start
+    align-items: center
+  .cooperation-content
+    grid-gap: 10px 0
+    margin-bottom: 65px
+  .cooperation-number
+    max-width: 70px
+  .cooperation-text
+    font-size: 20px
+  .cooperation-info
+    font-size: 24px
+    & span
+      font-size: 20px
+  .btn-cta
+    & .btn-text
+      padding: 15px
+
+  #customers
+    padding-bottom: 80px
+  .customers-content
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 25px
+
+  .map
+    height: 410px
+  .contacts-block
+    padding: 25px 50px 25px 25px
+  .contacts-title
+    font-size: 12px
+  .contacts-item
+    margin-bottom: 15px
+  .contacts-text
+    font-size: 15px
+
+  .popup-text
+    max-width: 660px
+    font-size: 36px
+
+  #popup-presentation_container
+    width: 700px
+    height: calc(700px * 0.5625)
+
+  .popup-action
+    & .popup-text
+      max-width: 620px
+  
+  .slogan__subtitle
+    display: none
+
+@media screen and (max-width: 767px)
+
+  .container
+    padding: 0 10px 0 25px
+  .title
+    padding: 50px 0px
+    font-size: 50px
+  .callback
+    display: block
+  .header-content
+    align-items: center
+  .header-title
+    font-size: 12px
+  .header-title
+    display: none
+  .header-text._phone
+    display: none
+    &._main
+      display: block
+  
+  .header-address, .header-phone, .header-mail
+    padding: 0
+    &:before
+      display: none
+
+  .header-address
+    display: none
+    &._mob
+      display: block
+  .header-text
+    &._phone
+      font-size: 15px
+  header .btn-header
+    display: none
+  .nav-link
+    font-size: 32px
+  .sidebar-logo
+    display: none
+  .sidebar
+    // padding: 10px
+    //padding: 0
+  .sidebar-content
+    padding-bottom: 0
+    justify-content: flex-end
+  .burger
+    position: absolute
+    top: 50%
+    left: -16px
+    transform: translateY(-50%) rotate(-90deg)
+    padding: 10px 0
+  .logo-mobile
+    display: block
+    max-width: 45px
+  .header
+    margin: 0 auto
+    padding: 8px 0
+    width: 100%
+    & .container
+      padding: 0 10px
+
+  .main
+    height: 450px
+  .orbitvu-main, .tour-example
+    width: 160px
+    height: 285px
+    bottom: -145px
+  .orbitvu-main__container, .tour-example__container
+    margin: auto
+    bottom: -140px
+    width: 150px
+    & .orbitvu-viewer
+      width: 250px
+      height: 250px
+  .main-content
+    padding-top: 25px
+    flex-direction: column
+  .main-presentation
+    position: relative
+    bottom: auto
+  .slogan
+    font-size: 6rem
+    margin-bottom: 0px
+    width: 100%
+    text-align: center
+
+  .slogan__subtitle
+    font-size: 2rem
+    text-align: left
+    width: 100%
+    text-align: center
+
+  .main-presentation
+    & p
+      font-size: 16px
+      margin-right: 15px
+
+  .btn-cta
+    margin: 50px auto
+
+  // FRONT PAGE
+  #frontpage
+    .main-content__subtitle
+      display: flex
+      flex-direction: column
+      color: red
+
+      .content__divider
+        display: none
+      
+      .content__link
+        margin: 1rem
+        padding: 1rem
+  
+  
+  // PHOTOS 360
+  
+  #photos-360
+    .title
+      margin-bottom: 2rem
+    .photos-desription
+      flex-direction: column-reverse
+    .photos-description__text
+      margin-top: 2rem
+  #tours
+    .photos-desription
+      flex-direction: column
+  .sub-title
+    padding: 30px 0
+    font-size: 25px
+  .area
+    grid-template-columns: repeat(2, auto)
+    grid-gap: 5px
+    justify-content: stretch
+  .area-img
+    width: 100px
+    height: 100px
+  .area-name
+    font-size: 20px
+    padding-top: 12px
+  .area-more
+    font-size: 20px
+
+  #equipment
+    padding-bottom: 65px
+  .title-equipment
+    font-size: 38px
+    width: 100%
+  .equipment-item
+    flex-direction: column-reverse
+    align-items: flex-start
+    &:first-child
+      & .equipment-img img
+        max-width: 270px
+    &:last-child
+      flex-direction: column-reverse
+      & .title
+        padding: 55px 0 20px 0
+  .title-equipment
+    display: none
+    &._mob
+      display: block
+  .equipment-img
+    flex-direction: column
+  .equipment-info
+    flex-basis: 100%
+  .equipment-img
+    max-width: 100%
+    align-items: flex-start
+    margin-bottom: 30px
+    & img
+      max-width: 210px
+  .btn-equipment
+    max-width: 210px
+
+  #price
+    padding-bottom: 65px
+  .price-content
+    height: 165px
+  .price-item
+    padding: 15px 10px
+    max-width: 180px
+    &:first-child
+      left: 15px
+    &:nth-child(2)
+      left: calc(15px + 190px)
+    &:last-child
+      left: calc(15px + 190px * 2)
+
+  #tours
+    .price-item
+      &:last-child
+        left: calc(15px + 190px)
+    .portfolio-grid
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 1rem
+  
+  .price-name
+    font-size: 20px
+  .price-text
+    margin-bottom: 8px
+    font-size: 12px
+  .price-title
+    font-size: 25px
+  .slick-slide, .slick-slide__block
+    grid-gap: 7px
+
+  .filter
+    margin-bottom: 30px
+    justify-content: space-around
+  .filter-sort
+    max-width: 155px
+  .filter-area
+    & option
+      font-size: 16px
+  .filter-sort
+    & label
+      padding: 0px
+  .filter-sort
+    & label:not(:nth-child(2))
+      margin-left: 4px
+
+  #portfolio
+    padding-bottom: 65px
+  .goods
+    grid-gap: 7px
+    margin-bottom: 35px
+  .goods-item
+    padding: 3px
+    //& imgslick-slide
+    //  max-height: 67px
+  .goods-type
+    width: 20px
+    height: 20px
+    right: 2px
+    bottom: 2px
+    & span
+      &:before
+        font-size: 10px
+      &._video
+        &:before
+          width: 8.5px
+          height: 8px
+  .slick-dots
+    padding: 0 20px 0 35px
+    & li
+      padding: 0 3px
+  
+  .pagination
+    & li
+      &:first-child, &:last-child
+        & .pagination-link
+          font-size: 0
+      &:first-child
+        & .pagination-link:before
+            right: 100%
+      &:last-child
+        & .pagination-link:before
+          left: 100%
+
+  .pagination-link
+    width: 28px
+    height: 28px
+    font-size: 16px
+
+  #cooperation
+    padding-bottom: 65px
+  .sub-title__cooperation
+    padding: 5px 0 10px 0
+    font-size: 20px
+  .cooperation-content
+    grid-template-columns: repeat(2,1fr)
+    grid-gap: 8px 0
+    margin-bottom: 50px
+  .cooperation-item
+    &:nth-child(2)
+      grid-column: 1 / 2
+      grid-row: 2 /3
+    &:nth-child(3)
+      grid-column: 1 / 2
+      grid-row: 3 /4
+
+  .cooperation-number
+    max-width: 55px
+  .cooperation-text
+    font-size: 16px
+    padding-left: 5px
+  .cooperation-bottom
+    flex-direction: column
+    align-items: start
+  .cooperation-info
+    font-size: 20px
+    margin-bottom: 20px
+    & span
+      font-size: 16px
+    &._mob
+      display: none
+
+  #customers
+    padding-bottom: 65px
+  .customers-content
+    grid-gap: 10px
+
+  .map
+    height: auto
+    & iframe
+      height: 260px
+  .contacts-block
+    position: relative
+    right: auto
+    top: auto
+    transform: none
+  .contacts-title
+    font-size: 12px!important
+  .contacts-text
+    font-size: 15px!important
+
+  .popup-close
+    margin-bottom: 50px
+  .popup-content
+    padding: 75px 25px 20px 25px
+  .popup-text
+    font-size: 32px
+  .form
+    max-width: 310px
+
+  .popup-portfolio__content
+    width: 100%
+    height: auto
+    &._360
+      width: 100%
+      max-width: 100%
+      height: 100%
+    &._video
+      width: 100%
+      height: 100%
+  .logo-thanks
+    max-width: 140px
+  .thanks-text
+    font-size: 32px
+    max-width: 300px
+  .popup-presentation
+    & .popup-content
+      padding: 75px 10px 20px 10px
+  #popup-presentation_container
+    padding: 0
+    width: 100%
+    height: auto
+
+  .popup-action
+    & .popup-text
+      max-width: 485px
+  
+  .popup
+    form
+      max-width: 95%
+
+@media screen and (max-width: 575px)
+  .callback
+    display: none
+  .language
+    margin-right: 1rem
+    margin-left: 1rem
+  .header-mail
+    display: none
+
+@media screen and (max-height: 720px) 
+  .popup-content
+    padding-top: 30px
+  .popup-close
+    left: 50%
+
+  
+
+

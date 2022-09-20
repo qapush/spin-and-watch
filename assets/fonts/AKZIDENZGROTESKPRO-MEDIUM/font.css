@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AkzidenzGroteskPro-MdCn';
+  src: url('AkzidenzGroteskPro-MdCn.eot');
+  src: url('AkzidenzGroteskPro-MdCn.eot?#iefix') format('embedded-opentype'),
+       url('AkzidenzGroteskPro-MdCn.svg#AkzidenzGroteskPro-MdCn') format('svg'),
+       url('AkzidenzGroteskPro-MdCn.ttf') format('truetype'),
+       url('AkzidenzGroteskPro-MdCn.woff') format('woff'),
+       url('AkzidenzGroteskPro-MdCn.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,88 @@
+#frontpage
+    .main
+        .container
+            display: flex
+            align-items: center
+            justify-content: center
+            .main-content
+                padding: 0px
+
+                .main-content__subtitle
+                    text-align: center
+
+    .content__link
+        padding: 5px
+        color: white
+        font-size: 2rem
+        &:hover
+            background-color: $pink
+
+    .content__divider
+        padding: 5px
+        color: white
+        font-size: 2rem
+
+    #about
+        margin-top: 0px
+
+    #photos-360
+        .photos-desription
+            display: flex
+            align-items: center
+            .photos-description__text
+                max-width: 600px
+            .photos-description__showcase
+                margin: auto
+                position: relative
+                img
+                    max-width: 200px
+
+                #photos-description__phone
+                    left: 50%
+                    position: absolute
+                    top: 50%
+                    transform: translate(-50%,-50%)
+                    z-index: 2
+#tours
+    // *
+    //     border: 1px solid red
+
+    #tours-description__krpano
+        height: 400px
+        max-width: 90%
+        margin: 50px auto
+        border-radius: 10px
+    .photos-desription
+        display: flex
+        align-items: center
+    .photos-description__text
+        width: 50%
+    .tours-description__showcase
+        width: 50%
+        
+#kontakt
+    // *
+    //     border: 1px solid red
+    .text
+        font-size: 1.5rem
+    form
+        margin-bottom: 50px
+        max-width: 600px
+        margin: auto
+    .text
+        text-align: center
+        margin: 40px auto
+        
+    
+    .form-fields
+        border: 2px solid $pink
+        color: black
+        &::placeholder
+            font-family: "AkzidenzGroteskPro-BoldCn", sans-serif
+            font-size: 25px
+            line-height: 120%
+            letter-spacing: 0.02em
+            color: $blue
+    
+    .btn-text
+        font-size: 1.4rem

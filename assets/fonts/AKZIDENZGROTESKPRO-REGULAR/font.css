@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AkzidenzGroteskPro-Regular';
+  src: url('AkzidenzGroteskPro-Regular.eot');
+  src: url('AkzidenzGroteskPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('AkzidenzGroteskPro-Regular.svg#AkzidenzGroteskPro-Regular') format('svg'),
+       url('AkzidenzGroteskPro-Regular.ttf') format('truetype'),
+       url('AkzidenzGroteskPro-Regular.woff') format('woff'),
+       url('AkzidenzGroteskPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
