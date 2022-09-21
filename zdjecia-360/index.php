@@ -464,46 +464,20 @@ $sphere = array_unique($unique); //массив со Сферами для по�
                     <p class="text">
                         Potrzebujesz kontentu dla strony internetowej? <br> Napisz do nas:
                     </p>
-                    <form action="../telegram.php" method="post">
-                        <input class="form-fields" type="text" name="user_name" placeholder="Imię" minlength="2" maxlength="20" required>
-                        <input class="form-fields" type="email" name="user_email" placeholder="Email" required>
-                        <input class="form-fields mask-phone" type="text" name="user_phone" placeholder="+48 ___ ___ ___" required>
-                        <textarea class="form-fields" name="user_message" placeholder="Wiadomość" required></textarea>
-                        <div class="consent">
-                            <input type="checkbox" name="zgoda" id="zgoda" required>
-                            <label for="zgoda">Wyrażam zgodę na przetwarszanie danych osobowych</label>
-                        </div>
-                        <div class="btn btn-form">
-                            <div class="btn-bg"></div>
-                            <button class="btn-text">Wyślij</button>
-                        </div>
-                    </form>
+                    <?php include '../components/form.php' ?>
 
                 
         </div>
     </section>
 
-    <?php include '../../components/footer.php' ?>
+    <?php include '../components/footer.php' ?>
     <div class="popup">
         <div class="popup-content">
             <div class="popup-close"></div>
             <p class="popup-text">
                 Wypełnij formularz, a my się odezwiemy wkrótce
             </p>
-            <form action="../telegram.php" method="post">
-                <input class="form-fields" type="text" name="user_name" placeholder="Imię" minlength="2" maxlength="20" required>
-                <input class="form-fields" type="email" name="user_email" placeholder="Email" required>
-                <input class="form-fields mask-phone" type="text" name="user_phone" placeholder="+48 ___ ___ ___" required>
-                <textarea class="form-fields" name="user_message" placeholder="Wiadomość" required></textarea>
-                <div class="consent">
-                    <input type="checkbox" name="zgoda" id="zgoda" required>
-                    <label for="zgoda">Wyrażam zgodę na przetwarszanie danych osobowych</label>
-                </div>
-                <div class="btn btn-form">
-                    <div class="btn-bg"></div>
-                    <button class="btn-text">Wyślij</button>
-                </div>
-            </form>
+            <?php include '../components/form.php' ?>
         </div>
     </div>
 

@@ -220,20 +220,7 @@
                     <p class="text">
                         Need a content for the webpage? <br> Write us:
                     </p>
-                    <form action="../telegram.php" method="post">
-                        <input class="form-fields" type="text" name="user_name" placeholder="Name" minlength="2" maxlength="20" required>
-                        <input class="form-fields" type="email" name="user_email" placeholder="Email" required>
-                        <input class="form-fields mask-phone" type="text" name="user_phone" placeholder="+48 ___ ___ ___" required>
-                        <textarea class="form-fields" name="user_message" placeholder="Message" required></textarea>
-                        <div class="consent">
-                            <input type="checkbox" name="zgoda" id="zgoda" required>
-                            <label for="zgoda">Wyrażam zgodę na przetwarszanie danych osobowych</label>
-                        </div>
-                        <div class="btn btn-form">
-                            <div class="btn-bg"></div>
-                            <button class="btn-text">Send</button>
-                        </div>
-                    </form>
+                    <?php include '../components/form.php' ?>
                </div>
 
                 
@@ -249,20 +236,7 @@
             <p class="popup-text">
                 Fill in the form and we'll get back to you shortly  
             </p>
-            <form action="../telegram.php" method="post">
-                <input class="form-fields" type="text" name="user_name" placeholder="Name" minlength="2" maxlength="20" required>
-                <input class="form-fields" type="email" name="user_email" placeholder="Email" required>
-                <input class="form-fields" type="text" name="user_phone" placeholder="Phone" required>
-                <textarea class="form-fields" name="user_message" placeholder="Message" required></textarea>
-                <div class="consent">
-                    <input type="checkbox" name="zgoda" id="zgoda-pop" required>
-                    <label for="zgoda-pop">I agree to the processing of personal data</label>
-                </div>
-                <div class="btn btn-form">
-                    <div class="btn-bg"></div>
-                    <button class="btn-text">Send</button>
-                </div>
-            </form>
+            <?php include '../components/form.php' ?>
         </div>
     </div>
 

@@ -406,9 +406,6 @@ let lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
 });
 
-// const map_url = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10163.707610020145!2d30.4349734!3d50.4424622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x18461c50dfd0229e!2z0K_QutC90LXQutGA0YPRgtC4!5e0!3m2!1suk!2sua!4v1615803228793!5m2!1suk!2sua",
-//       map_block = document.querySelector(".map");
-// window.addEventListener("scroll", loadMap)
 
 let scrollHeight = Math.max(
     document.body.scrollHeight, document.documentElement.scrollHeight,
@@ -416,27 +413,54 @@ let scrollHeight = Math.max(
     document.body.clientHeight, document.documentElement.clientHeight
 );
 
-// console.log(scrollHeight)
-// function loadMap() {
-//     if (window.pageYOffset > (scrollHeight / 2)){
-//         if (!map_block.querySelector("iframe")){
-//             const map_iframe = document.createElement("iframe");
-//             map_iframe.src = map_url;
-//             map_block.insertAdjacentElement("afterbegin", map_iframe);
-//         }
-//     }
-// }
-
-// POPUP AFTER 20 seconds
-
-// window.onload = function () {
-//     const popupAction = document.querySelector(".popup-action");
-//     setTimeout(function () {
-//         popupAction.classList.add("active");
-//     }, 20000)
-// }
 
 
+// FORMS
 
+if(document.querySelectorAll('form').length > 0) {
+    
+    document.querySelectorAll('form').forEach((form) => {
+        
+        form.addEventListener('submit', (e) => {
+            
+            e.preventDefault();
 
+            const request = new XMLHttpRequest();
+            request.open('POST', '/telegram.php');
+            const formData = new FormData(form);
 
+            request.send(formData);
+
+            const loader = document.createElement('div');
+            loader.innerHTML = '<div></div><div></div><div></div><div></div>';
+            loader.classList.add('lds-ellipsis');
+            form.insertAdjacentElement('beforeend', loader);
+
+            form.classList.add('submitted');
+
+            request.addEventListener('load', () => {
+                
+                console.log(request.responseText);
+
+                if(request.status == 200){
+                    loader.remove();
+                    document.querySelector('form.submitted .form__status-message--success').style.display = 'block';
+                    setTimeout(() => {
+                        document.querySelector('form.submitted .form__status-message--success').style.display = 'none';
+                        form.classList.remove('submitted');
+                    }, 3000)
+                    form.reset();
+                } else {
+                    loader.remove();
+                    document.querySelector('form.submitted .form__status-message--failure').style.display = 'block';
+                    setTimeout(() => {
+                        document.querySelector('form.submitted .form__status-message--failure').style.display = 'none';
+                        form.classList.remove('submitted');
+                    }, 3000)
+                }
+            })
+        })
+
+    })
+}
+ 

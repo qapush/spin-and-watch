@@ -342,47 +342,13 @@
                     <p class="text">
                         Potrzebujesz kontentu dla strony internetowej? <br> Napisz do nas:
                     </p>
-                    <form action="../telegram.php" method="post">
-                        <input class="form-fields" type="text" name="user_name" placeholder="Imię" minlength="2" maxlength="20" required>
-                        <input class="form-fields" type="email" name="user_email" placeholder="Email" required>
-                        <input class="form-fields mask-phone" type="text" name="user_phone" placeholder="+48 ___ ___ ___" required>
-                        <textarea class="form-fields" name="user_message" placeholder="Wiadomość" required></textarea>
-                        <div class="consent">
-                            <input type="checkbox" name="zgoda" id="zgoda" required>
-                            <label for="zgoda">Wyrażam zgodę na przetwarszanie danych osobowych</label>
-                        </div>
-                        <div class="btn btn-form">
-                            <div class="btn-bg"></div>
-                            <button class="btn-text">Wyślij</button>
-                        </div>
-                    </form>
+                    <?php include '../components/form.php' ?>
 
                 
 
         </div>
     </section>
 
-    
-
-    <!-- <section id="customers" class="margin-left">
-        <div class="container">
-            <h2 class="title">Klienci</h2>
-            <div class="customers-content dg">
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer1.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer2.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer3.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer4.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer5.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer6.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer7.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer8.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer9.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer10.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer11.png" alt=""></div>
-                <div class="customers-item"><img class="lazy" data-src="../assets/img/customers/customer12.png" alt=""></div>
-            </div>
-        </div> 
-    </section> -->
     <?php include '../components/footer.php' ?>
 
     <div class="popup">
@@ -391,20 +357,7 @@
             <p class="popup-text">
                 Wypełnij formularz, a my się odezwiemy wkrótce
             </p>
-            <form action="../telegram.php" method="post">
-                <input class="form-fields" type="text" name="user_name" placeholder="Imię" minlength="2" maxlength="20" required>
-                <input class="form-fields" type="email" name="user_email" placeholder="Email" required>
-                <input class="form-fields mask-phone" type="text" name="user_phone" placeholder="+48 ___ ___ ___" required>
-                <textarea class="form-fields" name="user_message" placeholder="Wiadomość" required></textarea>
-                <div class="consent">
-                    <input type="checkbox" name="zgoda" id="zgoda" required>
-                    <label for="zgoda">Wyrażam zgodę na przetwarszanie danych osobowych</label>
-                </div>
-                <div class="btn btn-form">
-                    <div class="btn-bg"></div>
-                    <button class="btn-text">Wyślij</button>
-                </div>
-            </form>
+            <?php include '../components/form.php' ?>
         </div>
     </div>
 
