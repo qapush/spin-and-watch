@@ -15,17 +15,17 @@
         [
             "name" => "Domofonia",
             "img" => "https://www.spinandwatch.pl/tours/portfolio/domofonia/domofonia.jpg",
-            "url" => "https://betterpoint.eu/tours/domofoniarec/",
+            "url" => "https://www.spinandwatch.pl/tours/domofonia/",
         ],
         [
             "name" => "Asstra",
             "img" => "https://www.spinandwatch.pl/tours/portfolio/asstra/asstra.jpg",
-            "url" => "https://betterpoint.eu/tours/asstra/",
+            "url" => "https://www.spinandwatch.pl/tours/asstra/",
         ],
         [
             "name" => "Tomaszewski",
             "img" => "https://www.spinandwatch.pl/tours/portfolio/tomaszewski/tomaszewski.jpg",
-            "url" => "https://betterpoint.eu/tours/tomaszewski/",
+            "url" => "https://www.spinandwatch.pl/tours/tomaszewski/",
         ],
         [
             "name" => "The Park Warsaw",
@@ -43,9 +43,9 @@
 
 
 <!doctype html>
-<html lang="pl">
+<html lang="en">
 <head>
-<meta name="facebook-domain-verification" content="icw5jwnbhczd18xfilukmp9w8xe8sy" />
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -81,7 +81,7 @@
 
     <meta property="og:title" content="Spin & Watch" />
     <meta property="og:type" content="activity" />
-    <meta property="og:url" content="https://www.spinandwatch.pl/" />
+    <meta property="og:url" content="https://www.spinandwatch.pl/en/virtual-tours" />
     <meta property="og:image" content="https://spinandwatch.pl/assets/img/ogimg.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -255,7 +255,7 @@
 
     <section id="portfolio" class="margin-left">
         <div class="container">
-            <h2 class="title">Pricing</h2>
+            <h2 class="title">Portfolio</h2>
             <div class="portfolio-grid">
 
                 <?php
@@ -277,7 +277,7 @@
 
     <section id="price" class="margin-left">
         <div class="container">
-            <h2 class="title">Cena </h2>
+            <h2 class="title">Pricing</h2>
             <div class="price-content dg">
                 <div class="price-item">
                     <h3 class="price-name">Ground</h3>

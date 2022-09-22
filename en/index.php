@@ -6,9 +6,9 @@
 ?>
 
 <!doctype html>
-<html lang="pl">
+<html lang="en">
 <head>
-    <meta name="facebook-domain-verification" content="icw5jwnbhczd18xfilukmp9w8xe8sy" />
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -44,7 +44,7 @@
 
     <meta property="og:title" content="Spin & Watch" />
     <meta property="og:type" content="activity" />
-    <meta property="og:url" content="https://www.spinandwatch.pl/" />
+    <meta property="og:url" content="https://www.spinandwatch.pl/en" />
     <meta property="og:image" content="https://spinandwatch.pl/assets/img/ogimg.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -55,7 +55,7 @@
     <meta name="twitter:title" content="Spin & Watch" />
     <meta name="twitter:description" content="📷 Packshots 💫 Spins 360° 👀 Virtual tours" />
     <meta name="twitter:image" content="https://spinandwatch.pl/assets/img/ogimg.png" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 
     <link rel="stylesheet" href="../assets/css/main.css">
 
@@ -142,7 +142,7 @@
             <div class="photos-desription">
                <div class="photos-description__text">
                     <p class="text">
-                        <span class="color-pink bold">360° photography</span> is a modern way to shocase products on webpages or social media.
+                        <span class="color-pink bold">360° photography</span> is a modern way to showcase products on webpages or social media.
                         <br><br>
                         This kind of presentation allows the item to be viewed from either side using interactive control.
 
@@ -151,7 +151,7 @@
                <div class="photos-description__showcase">
                     <script type="text/javascript" src="../assets/img/portfolio/360/orbitvu12/orbitvu.js"></script>
                     <script type="text/javascript">
-                        $(function() {
+
                             inject_orbitvu(
                                 'photos-description__phone',
                                 '../assets/img/portfolio/360/orbitvu12/',
@@ -162,7 +162,7 @@
                                     width: "100%",
                                     height: "100%"
                                 });
-                        });
+
                     </script>
                     <div class="photos-description__phone">
                         <img src="../assets/img/header/phone.png" alt="">
@@ -262,8 +262,8 @@
     <?php include '../components/footer.php' ?>
 </main>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-<script src="../assets/js/maskinput.min.js"></script>
+
+<!-- <script src="../assets/js/maskinput.min.js"></script> -->
 <script src="../assets/js/lazyload.min.js"></script>
 <script src="../assets/js/main.js"></script>
 

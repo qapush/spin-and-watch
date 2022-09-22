@@ -3,6 +3,7 @@
     $phone_text = '';
     $cta_text = '';
     $data_poput_text = '';
+    $home_url = '';
 
     
     switch ($lang['lang']) {
@@ -10,11 +11,13 @@
             $phone_text .= 'Telefon';
             $cta_text .= 'Skontaktuj się z nami';
             $data_poput_text .= 'cooperation';
+            $home_url .= '/';
             break;
         case "PL":
             $phone_text .= 'Phone';
             $cta_text .= 'Contact us';
             $data_poput_text .= 'cooperration-eng';
+            $home_url .= '/en';
             break;
     }
 
@@ -25,7 +28,7 @@
 <header class="header">
     <div class="container">
         <div class="header-content dg">
-            <a href="#/" class="logo logo-mobile">
+            <a href="<?= $home_url ?>" class="logo logo-mobile">
                 <img src="https://www.spinandwatch.pl/assets/img/header/logo.svg" alt="">
             </a>
             <div class="header-item header-mail">

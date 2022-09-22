@@ -10,7 +10,7 @@
 <!doctype html>
 <html lang="pl">
 <head>
-    <meta name="facebook-domain-verification" content="icw5jwnbhczd18xfilukmp9w8xe8sy" />
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -46,7 +46,7 @@
 
     <meta property="og:title" content="Spin & Watch" />
     <meta property="og:type" content="activity" />
-    <meta property="og:url" content="https://www.spinandwatch.pl/" />
+    <meta property="og:url" content="https://www.spinandwatch.pl" />
     <meta property="og:image" content="https://spinandwatch.pl/assets/img/ogimg.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -131,8 +131,8 @@
         Jesteśmy nowoczesnym studiem produkcyjnym działającym na terenie Polski.
         Nasza specjalizacja to zdjęcia 360°, packshoty oraz spacery wirtualne.
         <br><br>
-        Są to niezwykle efektywne sposóby na prezentację twojego produktu lub pokazanie przestrzeni w&nbsp;najdrobniejszych szczegółach.                       
-        Skorzystaj z&nbsp;potencjału tych narzędzi i&nbsp;odczuj satysfakcję z&nbsp;zainteresowania klientów oraz zwiększenia sprzedaży.
+        Są to niezwykle efektywne sposoby na prezentację twojego produktu lub pokazanie przestrzeni w&nbsp;najdrobniejszych szczegółach.                       
+        Skorzystaj z&nbsp;potencjału tych narzędzi i&nbsp;poczuj satysfakcję z&nbsp;zainteresowania klientów oraz zwiększenia sprzedaży.
         </p>
     </div>
     </section>
@@ -145,9 +145,9 @@
             <div class="photos-desription">
                <div class="photos-description__text">
                     <p class="text">
-                        <span class="color-pink bold">Zdjęcia 360°</span> nowoczesny sposób na przedtsawienie produktów na stronach internetowych lub również w sieciach społecznościowych.
+                        <span class="color-pink bold">Zdjęcia 360°</span> nowoczesny sposób na przedstawienie produktów na stronach internetowych lub również w sieciach społecznościowych.
                         <br><br>
-                        Taka prezentacja pozwala na obejrzenie przedmmiotu z kadej strony za pomocą interaktywnej kontroli przez uytkownika.
+                        Taka prezentacja pozwala na obejrzenie przedmiotu z każdej strony za pomocą interaktywnej kontroli przez uytkownika.
                     </p>
                </div>
                <div class="photos-description__showcase">
@@ -200,8 +200,9 @@
                 
                 <script type="text/javascript" src="assets/js/krpano.js"></script>
                 <script>
-                            embedpano({xml:"tours/slider/tour.xml", target:"tours-description__krpano", html5:"only", mobilescale:1.0, passQueryParameters:"startscene,startlookat"});
+                    embedpano({xml:"/tours/slider/tour.xml", target:"tours-description__krpano", html5:"only", mobilescale:1.0, passQueryParameters:"startscene,startlookat"});
                 </script>
+      
             </div> 
             <a class="btn btn-cta ma" href="spacery-wirtualne">
                 <div class="btn-bg"></div>

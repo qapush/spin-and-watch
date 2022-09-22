@@ -115,7 +115,7 @@ $sphere = array_unique($unique); //массив со Сферами для по�
 
 ?>
 <!doctype html>
-<html lang="pl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
     <meta name="viewport"
@@ -152,7 +152,7 @@ $sphere = array_unique($unique); //массив со Сферами для по�
 
     <meta property="og:title" content="Spin & Watch" />
     <meta property="og:type" content="activity" />
-    <meta property="og:url" content="https://www.spinandwatch.pl/" />
+    <meta property="og:url" content="https://www.spinandwatch.pl/en/photo-360" />
     <meta property="og:image" content="https://spinandwatch.pl/assets/img/ogimg.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -319,7 +319,7 @@ $sphere = array_unique($unique); //массив со Сферами для по�
                         <br><br>
                         Great for using on social networks - from running a profile to creating stories and advertising developing bigger creations.
                     <br><br>
-                        360° photos will shocase you product on the website and 360° video will will enhance your YouTube channel or Instagram account.
+                        360° photos will showcase you product on the website and 360° video will will enhance your YouTube channel or Instagram account.
                     </p>
                 </div>
                 <div class="equipment-img df">
@@ -437,7 +437,7 @@ $sphere = array_unique($unique); //массив со Сферами для по�
                 </div>
                 <div class="cooperation-item df">
                     <img class="cooperation-number lazy" data-src="../../assets/img/cooperation/05.png" alt="">
-                    <p class="cooperation-text">Marceting<br>agencies</p>
+                    <p class="cooperation-text">Marketing<br>agencies</p>
                 </div>
                 <div class="cooperation-item df">
                     <img class="cooperation-number lazy" data-src="../../assets/img/cooperation/06.png" alt="">

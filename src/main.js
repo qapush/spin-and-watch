@@ -212,8 +212,6 @@ portfolio_item.forEach((item) => {
 // Items Portfolio filter start
 
 if (!!document.querySelector('form.filter')) {
-  console.log(!!document.querySelector('form.filter'));
-  console.log(document.querySelector('.goods'));
   let filters_type = document.querySelectorAll('.filter-fields_type'),
     goods = document.querySelectorAll('.goods-item'),
     goods_block = document.querySelector('.goods'),
@@ -410,9 +408,9 @@ function loadYTscript() {
   }
 }
 
-jQuery(function ($) {
-  $('.mask-phone').mask('+48 999-999-999');
-});
+// jQuery(function ($) {
+//   $('.mask-phone').mask('+48 999-999-999');
+// });
 
 let lazyLoadInstance = new LazyLoad({
   elements_selector: '.lazy',
@@ -432,22 +430,20 @@ let scrollHeight = Math.max(
 if (document.querySelectorAll('form').length > 0) {
 
   function formSuccess(form){
+    document.querySelector('form.submitted .form--wrapper').style.display = "none";
+    document.querySelector('form.submitted .form__status-message').style.display = 'block';
     document.querySelector('form.submitted .form__status-message--success').style.display = 'block';
-    setTimeout(() => {
-      document.querySelector('form.submitted .form__status-message--success').style.display =
-        'none';
-      form.classList.remove('submitted');
-    }, 5000);
+    form.classList.remove('submitted');
+   
     form.reset();
   }
 
   function formFailure(form){
+    document.querySelector('form.submitted .form--wrapper').style.display = "none";
+    document.querySelector('form.submitted .form__status-message').style.display = 'block';
     document.querySelector('form.submitted .form__status-message--failure').style.display = 'block';
-    setTimeout(() => {
-      document.querySelector('form.submitted .form__status-message--failure').style.display =
-        'none';
-      form.classList.remove('submitted');
-    }, 5000);
+    form.classList.remove('submitted');
+
     form.reset();
   }
 
@@ -465,21 +461,21 @@ if (document.querySelectorAll('form').length > 0) {
       const loader = document.createElement('div');
       loader.innerHTML = '<div></div><div></div><div></div><div></div>';
       loader.classList.add('lds-ellipsis');
-      form.insertAdjacentElement('beforeend', loader);
-
+      form.insertAdjacentElement('afterbegin', loader);
+      
       form.classList.add('submitted');
 
       request.addEventListener('load', () => {
-
+        loader.remove();
         try {
           const submissionStatus = JSON.parse(request.response).Status;
           if (request.status == 200 && submissionStatus === 'Success') {
               formSuccess(form);
-              loader.remove();
-          } 
+          } else {
+            formFailure(form);  
+          }
         } catch {
-          formFailure(form);
-          loader.remove();
+          formFailure(form);  
         }
 
       });
@@ -488,3 +484,4 @@ if (document.querySelectorAll('form').length > 0) {
   });
 
 }
+

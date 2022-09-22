@@ -15,17 +15,17 @@
         [
             "name" => "Domofonia",
             "img" => "https://www.spinandwatch.pl/tours/portfolio/domofonia/domofonia.jpg",
-            "url" => "https://betterpoint.eu/tours/domofoniarec/",
+            "url" => "https://www.spinandwatch.pl/tours/domofonia/",
         ],
         [
             "name" => "Asstra",
             "img" => "https://www.spinandwatch.pl/tours/portfolio/asstra/asstra.jpg",
-            "url" => "https://betterpoint.eu/tours/asstra/",
+            "url" => "https://www.spinandwatch.pl/tours/asstra/",
         ],
         [
             "name" => "Tomaszewski",
             "img" => "https://www.spinandwatch.pl/tours/portfolio/tomaszewski/tomaszewski.jpg",
-            "url" => "https://betterpoint.eu/tours/tomaszewski/",
+            "url" => "https://www.spinandwatch.pl/tours/tomaszewski/",
         ],
         [
             "name" => "The Park Warsaw",
@@ -45,7 +45,7 @@
 <!doctype html>
 <html lang="pl">
 <head>
-    <meta name="facebook-domain-verification" content="icw5jwnbhczd18xfilukmp9w8xe8sy" />
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -81,7 +81,7 @@
 
     <meta property="og:title" content="Spin & Watch" />
     <meta property="og:type" content="activity" />
-    <meta property="og:url" content="https://www.spinandwatch.pl/" />
+    <meta property="og:url" content="https://www.spinandwatch.pl/spacery-wirtualne" />
     <meta property="og:image" content="https://spinandwatch.pl/assets/img/ogimg.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -101,7 +101,7 @@
 
 <aside class="sidebar">
     <div class="sidebar-content">
-        <a href="../" class="logo sidebar-logo">
+        <a href="./" class="logo sidebar-logo">
             <img src="../assets/img/header/logo.svg" alt="">
         </a>
         <div class="burger df">
@@ -240,7 +240,7 @@
                         <br><br>
                         Wykorzystanie spaceru wirtualnego zwiększa zaangażowanie użytkownika podczas prezentacji nieruchomości.
                         <br><br>
-                        Oferujemy naszym klientow również spacery <span class="color-pink bold">Google Street View</span>, którę dostępne są do obejrzenia podczas korzystania z&nbsp;map Google.
+                        Oferujemy naszym klientow również spacery <span class="color-pink bold">Google Street View</span>, które dostępne są do obejrzenia podczas korzystania z&nbsp;map Google.
                     </p>
                 </div>
                 <div class="equipment-img df">
