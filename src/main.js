@@ -430,7 +430,29 @@ let scrollHeight = Math.max(
 // FORMS
 
 if (document.querySelectorAll('form').length > 0) {
+
+  function formSuccess(form){
+    document.querySelector('form.submitted .form__status-message--success').style.display = 'block';
+    setTimeout(() => {
+      document.querySelector('form.submitted .form__status-message--success').style.display =
+        'none';
+      form.classList.remove('submitted');
+    }, 5000);
+    form.reset();
+  }
+
+  function formFailure(form){
+    document.querySelector('form.submitted .form__status-message--failure').style.display = 'block';
+    setTimeout(() => {
+      document.querySelector('form.submitted .form__status-message--failure').style.display =
+        'none';
+      form.classList.remove('submitted');
+    }, 5000);
+    form.reset();
+  }
+
   document.querySelectorAll('form').forEach((form) => {
+
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
@@ -448,30 +470,21 @@ if (document.querySelectorAll('form').length > 0) {
       form.classList.add('submitted');
 
       request.addEventListener('load', () => {
-        const status = JSON.parse(request.response).Status;
-        console.log(status);
 
-        if (request.status == 200) {
+        try {
+          const submissionStatus = JSON.parse(request.response).Status;
+          if (request.status == 200 && submissionStatus === 'Success') {
+              formSuccess(form);
+              loader.remove();
+          } 
+        } catch {
+          formFailure(form);
           loader.remove();
-          document.querySelector('form.submitted .form__status-message--success').style.display =
-            'block';
-          setTimeout(() => {
-            document.querySelector('form.submitted .form__status-message--success').style.display =
-              'none';
-            form.classList.remove('submitted');
-          }, 3000);
-          form.reset();
-        } else {
-          loader.remove();
-          document.querySelector('form.submitted .form__status-message--failure').style.display =
-            'block';
-          setTimeout(() => {
-            document.querySelector('form.submitted .form__status-message--failure').style.display =
-              'none';
-            form.classList.remove('submitted');
-          }, 3000);
         }
+
       });
+
     });
   });
+
 }
