@@ -19,23 +19,15 @@ $arr = array(
 foreach($arr as $key => $value) {
     $txt .= "<b>".$key."</b> ".$value."%0A";
 }; 
+
 // $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+$sendToTelegram = fopen("http://localhost:8888","r");
 
-if( fopen("11","r") != false){
-    echo 'Siewma';
-}
 
-// try {
-//     $sendToTelegram = fopen("11","r");
-//     if ($sendToTelegram) {
-//         echo json_encode($_POST);
-//      }
-// } catch (Exception $e) {
-//     echo false;
-// }
 
-// if ($sendToTelegram) {
-//        echo json_encode($_POST);
-//     } else {
-//         echo false;
-//     }
+
+if ($sendToTelegram) {
+       echo json_encode(array("Status"=>"Success"));
+    } else {
+        echo json_encode(array("Status"=>"Failure"));
+    }
