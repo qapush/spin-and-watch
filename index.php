@@ -25,6 +25,7 @@
           type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="assets/fonts/AKZIDENZGROTESKPRO-REGULAR/Condensed/AkzidenzGroteskPro-Cn.woff2" as="font"
           type="font/woff2" crossorigin="anonymous">
+    <link rel="canonical" href="https://www.spinandwatch.pl" />
 
     <link rel="apple-touch-icon" sizes="57x57" HREF="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" HREF="favicon/apple-icon-60x60.png">
