@@ -192,7 +192,7 @@
                 <p class="text">
                     <span class="color-pink bold">Spacer wirtualny</span> to nowa forma prezentacji obiektów, wnętrz i okolic, która pozwala w oryginalny oraz ciekawy sposób zaprezentować każdą przestrzeń.
                     <br><br>
-                    Wykonujemy zarówno spacery <span class="color-pink bold">Google Street View</span>, jak i&nbsp;szyte na miarę wirtualne spacery, wzbogacone o&nbsp;dodatkowe informacje oraz treści multimedialne.
+                    Wykonujemy zarówno spacery <span class="color-pink bold">Google Street View</span>, jak&nbsp;i&nbsp;szyte na miarę wirtualne spacery, wzbogacone o&nbsp;dodatkowe informacje oraz treści multimedialne.
                 </p>
             <p class="sub-title">Obszary zastosowania treści:</p>
             <div class="area dg">
@@ -236,7 +236,7 @@
                 <div class="equipment-info">
                     <h2 class="title title-usage">Wykorzystanie</h2>
                     <p class="text">
-                        Wykonany spacer można obejrzeć zarówno na komputerach, jak i na urządzeniach mobilnych.
+                        Wykonany spacer można obejrzeć zarówno na komputerach, jak&nbsp;i&nbsp;na&nbsp;urządzeniach mobilnych.
                         <br><br>
                         Wykorzystanie spaceru wirtualnego zwiększa zaangażowanie użytkownika podczas prezentacji nieruchomości.
                         <br><br>
