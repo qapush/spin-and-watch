@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: /tours/
+Allow: /assets/js/*.js
+Allow: /assets/css/*.css
+Allow: /assets/img/*/*.jpg
+Allow: /assets/img/*/*.png
+Allow: /assets/img/*/*.svg
+Sitemap: https://spinandwatch.pl/sitemap.xml
