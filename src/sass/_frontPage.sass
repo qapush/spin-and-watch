@@ -9,7 +9,6 @@
 
                 .main-content__subtitle
                     text-align: center
-
     .content__link
         padding: 5px
         color: white
@@ -43,46 +42,93 @@
                     top: 50%
                     transform: translate(-50%,-50%)
                     z-index: 2
-#tours
-    // *
-    //     border: 1px solid red
 
-    #tours-description__krpano
-        height: 400px
-        max-width: 90%
-        margin: 50px auto
-        border-radius: 10px
-    .photos-desription
-        display: flex
-        align-items: center
-    .photos-description__text
-        width: 50%
-    .tours-description__showcase
-        width: 50%
-        
-#kontakt
-    // *
-    //     border: 1px solid red
-    .text
-        font-size: 1.5rem
-    form
-        margin-bottom: 50px
-        max-width: 600px
-        margin: auto
-    .text
-        text-align: center
-        margin: 40px auto
-        
-    
-    .form-fields
-        border: 2px solid $pink
-        color: black
-        &::placeholder
-            font-family: "AkzidenzGroteskPro-BoldCn", sans-serif
-            font-size: 25px
-            line-height: 120%
-            letter-spacing: 0.02em
-            color: $blue
-    
-    .btn-text
-        font-size: 1.4rem
+    #packshots
+        .packshots-desription
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .pashshots-description__image
+                width: 50%
+                padding: 2rem
+
+                img
+                    width: 100%
+                    margin: auto
+                    display: block
+            .pashshots-description__text
+                max-width: 400px
+
+        @include tablet-down
+            .packshots-desription
+                .pashshots-description__image
+                    padding: 0
+
+        @include mobile-down
+            .packshots-desription
+                flex-direction: column
+                .pashshots-description__text
+                    max-width: none
+                .pashshots-description__image
+                    width: 65%
+                    margin: 2rem auto
+
+    #videos-360
+
+        .videos-360-description__text
+            max-width: 400px
+
+        .videos-360-description__video
+            position: relative
+            aspect-ratio: 16/9
+
+            iframe
+                width: 100%
+                height: 100%
+            .video-poster
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+                background-size: cover
+                background-position: center
+                background-image: url('/assets/img/cap.jpg')
+
+                img
+                    transform: scale(0.9)
+                    transition-duration: 0.3s
+
+                &:hover
+                    cursor: pointer
+                    img
+                        transform: scale(1.1)
+    #tours
+
+        #tours-description__krpano
+            height: 400px
+            max-width: 90%
+            margin: 50px auto
+            border-radius: 10px
+        .photos-desription
+            display: flex
+            align-items: center
+        .photos-description__text
+            width: 50%
+        .tours-description__showcase
+            width: 50%
+
+        @include tablet-down
+            .photos-desription
+                flex-direction: column
+                .photos-description__text
+                    width: auto
+                .tours-description__showcase
+                    width: 100%
+                #tours-description__krpano
+                    max-width: 70%
+                    @include mobile-down
+                        max-width: none
+
+    #price
+        .price-content
+            grid-template-columns: repeat(4, 1fr)

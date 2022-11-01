@@ -128,7 +128,7 @@ $sphere = array_unique($unique); //массив со Сферами для по�
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spin & Watch | 360° photos and virtual tours</title>
+    <title>360 spins | Product photography | Spin & Watch Poland</title>
     <meta name="description" content="📷 Packshots 💫 Spins 360° 👀 Virtual tours" />
     <link rel="preload" href="../../assets/fonts/AKZIDENZGROTESKPRO-BOLD/AkzidenzGroteskPro-BoldCn.woff2" as="font"
           type="font/woff2" crossorigin="anonymous">
@@ -208,7 +208,7 @@ $sphere = array_unique($unique); //массив со Сферами для по�
                     <a href="#cooperation" class="nav-link">Cooperation</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#kontakt" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a href="../" class="nav-link">&#8592 Main page</a>
@@ -468,7 +468,7 @@ $sphere = array_unique($unique); //массив со Сферами для по�
         </div>
     </section>
 
-    <section id="kontakt" class="margin-left">
+    <section id="contact" class="margin-left">
     <div class="container">
             <h2 class="title">Contact</h2>
 

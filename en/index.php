@@ -98,7 +98,7 @@
                     <a href="#tours" class="nav-link">Virtual tours</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#kontakt" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
  
                 <div class="header-mesh header-mesh__menu df">
@@ -181,7 +181,7 @@
                     </div>
                 </div>
             </div>
-            <a class="btn btn-cta" href="photo-360">
+            <a class="btn btn-cta" href="./360-spins/">
                 <div class="btn-bg"></div>
                 <p class="btn-text">More</p>
             </a>
@@ -215,7 +215,7 @@
                             embedpano({xml:"../tours/slider/tour.xml", target:"tours-description__krpano", html5:"only", mobilescale:1.0, passQueryParameters:"startscene,startlookat"});
                 </script>
             </div> 
-            <a class="btn btn-cta ma" href="virtual-tours">
+            <a class="btn btn-cta ma" href="./virtual-tours/">
                 <div class="btn-bg"></div>
                 <p class="btn-text">More</p>
             </a>
@@ -223,7 +223,7 @@
     </section>
 
 
-    <section id="kontakt" class="margin-left">
+    <section id="contact" class="margin-left">
         <div class="container">
             <h2 class="title">Contact</h2>
 

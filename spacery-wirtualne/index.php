@@ -57,7 +57,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spin & Watch | Studio fotografii 360°</title>
+    <title>Spacery wirtualne | Wirtualne wycieczki i panoramy | Spin & Watch</title>
     <meta name="description" content="📷 Packshoty 💫 Zdjęcia i filmy 360° 👀 Spacery wirtualne" />
     <link rel="preload" href="../assets/fonts/AKZIDENZGROTESKPRO-BOLD/AkzidenzGroteskPro-BoldCn.woff2" as="font"
           type="font/woff2" crossorigin="anonymous">
@@ -112,7 +112,7 @@
 
 <aside class="sidebar">
     <div class="sidebar-content">
-        <a href="./" class="logo sidebar-logo">
+        <a href="/" class="logo sidebar-logo">
             <img src="../assets/img/header/logo.svg" alt="">
         </a>
         <div class="burger df">
@@ -137,7 +137,7 @@
                     <a href="#cooperation" class="nav-link">Współpraca</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#kontakt" class="nav-link">Kontakt</a>
+                    <a href="#contact" class="nav-link">Kontakt</a>
                 </li>
                 <li class="nav-item">
                     <a href="/" class="nav-link">&#8592 Strona główna</a>
@@ -345,7 +345,7 @@
         </div>
     </section>
 
-    <section id="kontakt" class="margin-left">
+    <section id="contact" class="margin-left">
         <div class="container">
             <h2 class="title">Kontakt</h2>
 

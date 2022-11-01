@@ -485,3 +485,5 @@ if (document.querySelectorAll('form').length > 0) {
 
 }
 
+
+frontPage();

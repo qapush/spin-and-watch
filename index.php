@@ -22,7 +22,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spin & Watch | Studio fotografii 360°</title>
+    <title>Spin & Watch | Studio fotografii 360 i wirtulne wycieczki</title>
     <meta name="description" content="📷 Packshoty 💫 Zdjęcia i filmy 360° 👀 Spacery wirtualne" />
     <link rel="preload" href="assets/fonts/AKZIDENZGROTESKPRO-BOLD/AkzidenzGroteskPro-BoldCn.woff2" as="font"
           type="font/woff2" crossorigin="anonymous">
@@ -95,13 +95,13 @@
                     <a href="#about" class="nav-link">O nas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#photos-360" class="nav-link">Zdjęcia 360°</a>
+                    <a href="#photos-360" class="nav-link">Nasze usługi</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#tours" class="nav-link">Spacery wirtualne</a>
+                    <a href="#price" class="nav-link">Ceny</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#kontakt" class="nav-link">Kontakt</a>
+                    <a href="#contact" class="nav-link">Kontakt</a>
                 </li>
  
                 <div class="header-mesh header-mesh__menu df">
@@ -149,7 +149,7 @@
     </div>
     </section>
 
-    
+   
 
     <section id="photos-360" class="margin-left">
         <div class="container">
@@ -184,7 +184,7 @@
                     </div>
                 </div>
             </div>
-            <a class="btn btn-cta" href="zdjecia-360">
+            <a class="btn btn-cta" href="/zdjecia-360/">
                 <div class="btn-bg"></div>
                 <p class="btn-text">Więcej</p>
             </a>
@@ -192,6 +192,59 @@
     </section>
 
   
+
+    
+    
+
+    <section id="packshots" class="margin-left">
+        <div class="container">
+            <h2 class="title">Packshoty</h2>
+
+            <div class="packshots-desription">
+               <div class="pashshots-description__text">
+                    <p class="text">
+                        Realizujemy również packshoty, czyli zdjęcia produktowe, dopasowane do wymagań klientów.
+                    </p>
+               </div>
+                <div class="pashshots-description__image">
+                        <img src="/assets/img/boots-packshots.jpg" alt="">
+                </div>
+            </div> 
+            
+            <div class="btn btn-cta open-popup" data-popup="cooperation">
+                <div class="btn-bg"></div>
+                <p class="btn-text">Zamów</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos-360" class="margin-left">
+        <div class="container">
+            <h2 class="title">Wideo 360°</h2>
+
+            <div class="videos-360-desription dflex jcspacebetween aicenter">
+               <div class="videos-360-description__text w50">
+                    <p class="text">
+                        Wykonujemy wideo 360° produktów. Kontent, który pokaże produkt z każdej strony oraz wzbogaci kampanię reklamową.
+                    </p>
+               </div>
+                <div class="videos-360-description__video w50">
+                    <div class="video-container">
+                        <iframe src data-src="https://www.youtube.com/embed/lCU3gupAYeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-poster w100 h100 dflex jccenter aicenter">
+                            <img src="/assets/img/play.svg" alt="">
+                        </div>
+                    </div>
+                    </div>
+            </div> 
+            
+            <div class="btn btn-cta open-popup" data-popup="cooperation">
+                <div class="btn-bg"></div>
+                <p class="btn-text">Zamów</p>
+            </div>
+            
+        </div>
+    </section>
 
     <section id="tours" class="margin-left">
         <div class="container">
@@ -216,19 +269,52 @@
                 </script>
       
             </div> 
-            <a class="btn btn-cta ma" href="spacery-wirtualne">
+            <a class="btn btn-cta ma" href="/spacery-wirtualne/">
                 <div class="btn-bg"></div>
                 <p class="btn-text">Więcej</p>
             </a>
         </div>
     </section>
 
+    <section id="price" class="margin-left">
+        <div class="container">
+            <h2 class="title">Cena </h2>
+            <div class="price-content dg">
+                <div class="price-item">
+                    <h3 class="price-name">Zdjęcia 360°</h3>
+                    <!-- <p class="price-text">Zdjęcie w 360 stopniach. <br> Od 24 do 72 klatek</p> -->
+                    <p class="price-title">od 30 PLN / zdjęcie</p>
+                </div>
+                <div class="price-item">
+                    <h3 class="price-name">Fotografia produktowa</h3>
+                    <!-- <p class="price-text">Zdjęcia pod różnymi kątami. <br> Od 1 do 6 klatek</p> -->
+                    <p class="price-title">od 14 PLN / zdjęcie</p>
+                </div>
+                
+                <div class="price-item">
+                    <h3 class="price-name">Wideo 360°</h3>
+                    <!-- <p class="price-text">Wideo w&nbsp;pełnym obrocie. <br> 360 stopni</p> -->
+                    <p class="price-title">od 20 PLN / wideo</p>
+                </div>
+                
+                <div class="price-item">
+                    <h3 class="price-name">Panoramy 360°</h3>
+                    <!-- <p class="price-text">Wideo w&nbsp;pełnym obrocie. <br> 360 stopni</p> -->
+                    <p class="price-title">od 65 PLN / panorama</p>
+                </div>
+            </div>
+            <div class="btn btn-cta open-popup" data-popup="cooperation">
+                <div class="btn-bg"></div>
+                <p class="btn-text">Darmowa wycena</p>
+            </div>
+        </div>
+    </section>
 
-    <section id="kontakt" class="margin-left">
+    <section id="contact" class="margin-left">
         <div class="container">
             <h2 class="title">Kontakt</h2>
 
-               <div class="photos-description__text">
+               <div class="contact__description">
                     <p class="text">
                         Potrzebujesz kontentu dla strony internetowej? <br> Napisz do nas:
                     </p>
