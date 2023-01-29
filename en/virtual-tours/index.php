@@ -429,6 +429,7 @@
 
 <script src="/assets/js/maskinput.min.js"></script>
 <script src="/assets/js/lazyload.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfBwiYkAAAAACEgfhBzTt8kemNJSkanHnuolBGQ"></script>
 <script src="/assets/js/main.js"></script>
 
 <style type="text/css">

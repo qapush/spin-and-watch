@@ -66,6 +66,11 @@
     <meta name="twitter:description" content="📷 Packshoty 💫 Zdjęcia i filmy 360° 👀 Spacery wirtualne" />
     <meta name="twitter:image" content="https://spinandwatch.pl/assets/img/ogimg.png" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="assets/js/maskinput.min.js" defer></script>
+    <script src="assets/js/lazyload.min.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfBwiYkAAAAACEgfhBzTt8kemNJSkanHnuolBGQ" defer></script>
+    <script src="assets/js/main.js" defer></script>
 
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -111,7 +116,7 @@
         </nav>
         <div class="sidebar-mesh">
             <a href="https://wa.me/48575794017?text=Dzień dobry" class="sidebar-mesh__link" target="_blank"><span>Whatsapp</span></a>
-            <a href="https://www.facebook.com/SpinWatch-Poland-104866772201805/" class="sidebar-mesh__link target="_blank" "><span>Facebook</span></a>
+            <a href="https://www.facebook.com/SpinWatch-Poland-104866772201805/" class="sidebar-mesh__link" target="_blank"><span>Facebook</span></a>
             <a href="https://www.instagram.com/spinandwatch.pl/" class="sidebar-mesh__link" target="_blank"><span>Instagram</span></a>
         </div>
     </div>
@@ -360,10 +365,7 @@
     <?php include 'components/footer.php' ?>
 </main>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-<script src="assets/js/maskinput.min.js"></script>
-<script src="assets/js/lazyload.min.js"></script>
-<script src="assets/js/main.js"></script>
+
 
 <style type="text/css">
     #bingc-phone-button svg.bingc-phone-button-circle circle.bingc-phone-button-circle-inside {

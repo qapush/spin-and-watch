@@ -448,37 +448,56 @@ if (document.querySelectorAll('form').length > 0) {
   }
 
   document.querySelectorAll('form').forEach((form) => {
-
+    
     form.addEventListener('submit', (e) => {
+      
       e.preventDefault();
 
-      const request = new XMLHttpRequest();
-      request.open('POST', '/telegram.php');
-      const formData = new FormData(form);
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LfBwiYkAAAAACEgfhBzTt8kemNJSkanHnuolBGQ', {action: 'submit'}).then(function(token) {
+            
+          // RECAPTCHA
 
-      request.send(formData);
+            const request = new XMLHttpRequest();
+            request.open('POST', '/telegram.php');
 
-      const loader = document.createElement('div');
-      loader.innerHTML = '<div></div><div></div><div></div><div></div>';
-      loader.classList.add('lds-ellipsis');
-      form.insertAdjacentElement('afterbegin', loader);
-      
-      form.classList.add('submitted');
+            const recaptchaInput = document.createElement('input');
+            recaptchaInput.type = "hidden";
+            recaptchaInput.style.display = "none";
+            recaptchaInput.name = "g-recaptcha-response";
+            recaptchaInput.value = token;
 
-      request.addEventListener('load', () => {
-        loader.remove();
-        try {
-          const submissionStatus = JSON.parse(request.response).Status;
-          if (request.status == 200 && submissionStatus === 'Success') {
-              formSuccess(form);
-          } else {
-            formFailure(form);  
-          }
-        } catch {
-          formFailure(form);  
-        }
+            form.prepend(recaptchaInput);
 
+            const formData = new FormData(form);
+            request.send(formData);
+
+            const loader = document.createElement('div');
+            loader.innerHTML = '<div></div><div></div><div></div><div></div>';
+            loader.classList.add('lds-ellipsis');
+            form.insertAdjacentElement('afterbegin', loader);
+            
+            form.classList.add('submitted');
+            
+
+            request.addEventListener('load', () => {
+              loader.remove();
+              try {
+                const submissionStatus = JSON.parse(request.response).Status;
+                if (request.status == 200 && submissionStatus === 'Success') {
+                    formSuccess(form);
+                } else {
+                  formFailure(form);  
+                }
+              } catch {
+                formFailure(form);  
+              }
+
+            });
+        });
       });
+
+      
 
     });
   });
@@ -487,3 +506,4 @@ if (document.querySelectorAll('form').length > 0) {
 
 
 frontPage();
+
