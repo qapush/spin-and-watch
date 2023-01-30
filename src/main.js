@@ -454,7 +454,7 @@ if (document.querySelectorAll('form').length > 0) {
       e.preventDefault();
 
       grecaptcha.ready(function() {
-        grecaptcha.execute('6LfBwiYkAAAAACEgfhBzTt8kemNJSkanHnuolBGQ', {action: 'submit'}).then(function(token) {
+        grecaptcha.execute('6LfBwiYkAAAAACEgfhBzTt8kemNJSkanHnuolBGQ', {action: 'formularz'}).then(function(token) {
             
           // RECAPTCHA
 
