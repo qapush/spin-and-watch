@@ -61,7 +61,7 @@ if ( $success && in_array($name, $spamNames) || $score < 0.5) {
   $chat_id = "-839273264";
 
 
-  $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$msg}","r");
+  $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$msg}score:{$score}","r");
 
   if($sendToTelegram){
     echo json_encode(array("Status"=>"Success"));
