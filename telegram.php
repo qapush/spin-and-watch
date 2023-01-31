@@ -42,6 +42,11 @@ $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&re
 $request = file_get_contents($url);
 $response = json_decode($request, true);
 $responseText = implode(' ', $response);
+$responseTextFirstItem = '';
+$varExport = $debug = var_export($response, true);
+if($response[0]){
+  $responseTextFirstItem = implode(' ', $response[0]);
+}
 
 
 
@@ -58,6 +63,8 @@ if ( $success && in_array($name, $spamNames) || $score < 0.5) {
   $txt .= "<b>SPAM SCORE: </b> ". $score . "&#10;";
   $txt .= "<b>IP: </b> ". $ip . "&#10;";
   $txt .= "<b>RAW: </b> ". $responseText . "&#10;";
+  $txt .= "<b>RAW - 1: </b> ". $responseTextFirstItem . "&#10;";
+  $txt .= "<b>VAR XPORT: </b> ". $varExport . "&#10;";
 
   $msg = urlencode($txt);
   $token = "6149169481:AAFA0g0FJdGeENMDKIcJLGGPDos3VCw8tUg";
