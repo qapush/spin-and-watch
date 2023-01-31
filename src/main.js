@@ -434,7 +434,9 @@ if (document.querySelectorAll('form').length > 0) {
     document.querySelector('form.submitted .form__status-message').style.display = 'block';
     document.querySelector('form.submitted .form__status-message--success').style.display = 'block';
     form.classList.remove('submitted');
-   
+    
+  
+
     form.reset();
   }
 
@@ -483,15 +485,21 @@ if (document.querySelectorAll('form').length > 0) {
             request.addEventListener('load', () => {
               loader.remove();
               try {
-                const submissionStatus = JSON.parse(request.response).Status;
-                if (request.status == 200 && submissionStatus === 'Success') {
-                    formSuccess(form);
+                const response = JSON.parse(request.response);
+                const submissionStatus = response.status;
+                const submissionSpam = response.spam;
+                if (request.status == 200 && submissionStatus === 'success') {
+                  formSuccess(form);
+                  if(dataLayer && submissionSpam === 'false') dataLayer.push({'event': 'form-submit-nospam'});
+                  if(dataLayer && submissionSpam === 'true') dataLayer.push({'event': 'form-submit-spam'});
+                  console.log(typeof submissionSpam, submissionSpam);
                 } else {
                   formFailure(form);  
+            
                 }
               } catch {
                 formFailure(form);  
-              }
+              } 
 
             });
         });

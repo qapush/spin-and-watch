@@ -9,7 +9,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spin and Watch | Demo</title>
+    <title>Spin and Watch | Packshoty</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -28,7 +28,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
+    <link rel="stylesheet" href="/assets/css/main.css">
     <style>
         *{
             padding: 0;
@@ -37,6 +37,7 @@
         .logo{
             background: #595959;
             padding: 10px 0;
+            width: 100%;
         }
         .logo img{
             width: 100%;
@@ -65,9 +66,26 @@
             background-position: center;
         }
 
+        .title {
+            padding-top: 0;            
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .text {
+            max-width: 800px;
+        }
+        
+
         @media only screen and (max-width: 650px) {
             #lightgallery {
                 gap: 5px;
+            }
+
+            .text {
+                font-size: 1rem;
             }
         }
 
@@ -84,6 +102,28 @@
     </div>
 
     <div class="content">
+    <section>
+    <div class="container"> 
+        <h2 class="title">Zdjęcia produktowe</h2>
+        <p class="text">
+        Dostarczamy na życzenie klienta zdjęcia przedmiotów
+zarówno na wyciętym, jak i na neutralnym czy
+niestandardowym tle.
+        </p>
+        <br>
+        <p class="text">
+        Dokonujemy również retuszy czy modyfikacji
+wizualnych w razie potrzeby lub dodajemy
+elementy graficzne.
+        </p>
+        <br>
+        <p class="text">
+        Dzięki zautomatyzowanym procesom oraz pełnej kontroli
+nad światłem zapełniamy powtarzalność zdjęć oraz
+szybkość realizacji.
+        </p>
+    </div>
+    </section>
         <div id="lightgallery">
             <?php
                 foreach($images as $index => $image) { 
@@ -100,6 +140,7 @@
             ?>
         </div>
     </div>
+    <?php include '../components/footer.php' ?>
 
     <script type="text/javascript">
         lightGallery(document.getElementById('lightgallery')); 
