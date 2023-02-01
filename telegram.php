@@ -3,7 +3,7 @@
 где, 1771605114:AAH84uS2WFa8JqS7wW-UVyo8P_blVahLTD0 - токен вашего бота, полученный ранее */
 
 
-$mode = 'prod';
+$mode = 'dev';
 
 if($mode === 'dev') {
   $token = "6149169481:AAFA0g0FJdGeENMDKIcJLGGPDos3VCw8tUg";
@@ -30,7 +30,6 @@ foreach($arr as $key => $value) {
     $txt .= "<b>".$key."</b> ". htmlspecialchars($value) . "&#10;";
 }; 
 
-$msg = urlencode($txt);
 // echo $txt;
 // echo $captcha;
 // echo 'asdasd';
@@ -41,12 +40,8 @@ $secretKey = "6LfBwiYkAAAAAKwYHN9DNzK_CSfnVrq-MZwcHsw5";
 $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$captcha.'&remoteip='.$ip;
 $request = file_get_contents($url);
 $response = json_decode($request, true);
-$responseText = implode(' ', $response);
-$responseTextFirstItem = '';
-$varExport = $debug = var_export($response, true);
-if($response[0]){
-  $responseTextFirstItem = implode(' ', $response[0]);
-}
+$responseRaw = $debug = var_export($response, true);
+
 
 
 
@@ -54,19 +49,21 @@ $success = $response['success'];
 $action = $response['action'];
 $score = $response['score'];
 
-$spamNames = array('anamb', 'qapush');
+$spamNames = array('qapush');
+
+$txt .= "&#10; ----------- &#10;";
+$txt .= "<b>IP: </b> ". $ip . "&#10;";
+$txt .= "<b>Spam score (if available): </b> ". $score . "&#10;";
+$txt .= "<b>Metadata: </b> ". $responseRaw . "&#10;";
+$txt .= "<b>S: </b> ". $success . "&#10;";
+$txt .= "<b>Typeof s: </b> ". gettype($success) . "&#10;";
+$msg = urlencode($txt);
 
 
 // If name is spamNames or score is less than 0.5 -> send to qapush-bot
-if ( $success && in_array($name, $spamNames) || $score < 0.5) {
+if ( $success && in_array($name, $spamNames) || $success && $score < 0.5) {
 
-  $txt .= "<b>SPAM SCORE: </b> ". $score . "&#10;";
-  $txt .= "<b>IP: </b> ". $ip . "&#10;";
-  $txt .= "<b>RAW: </b> ". $responseText . "&#10;";
-  $txt .= "<b>RAW - 1: </b> ". $responseTextFirstItem . "&#10;";
-  $txt .= "<b>VAR XPORT: </b> ". $varExport . "&#10;";
-
-  $msg = urlencode($txt);
+  
   $token = "6149169481:AAFA0g0FJdGeENMDKIcJLGGPDos3VCw8tUg";
   $chat_id = "-839273264";
 
@@ -81,7 +78,7 @@ if ( $success && in_array($name, $spamNames) || $score < 0.5) {
 
 
   // If not spamname and score greater than 0.5 -> send to chat
-} else if($success && $score > 0.5) {
+} else if ($success && $score > 0.5) {
 
   if($mode !== 'dev'){
     $token = "5542373349:AAFQsT9vZwWA7bE-Xttmpw0IGyyfbqq7fhw";
@@ -95,4 +92,6 @@ if ( $success && in_array($name, $spamNames) || $score < 0.5) {
   } else {
       echo json_encode(array("status"=>"failure", "spam" => "false"));
   }
+} else {
+  echo json_encode(array("status"=>"failure", "spam" => "true"));
 }
