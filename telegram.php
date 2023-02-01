@@ -3,7 +3,7 @@
 где, 1771605114:AAH84uS2WFa8JqS7wW-UVyo8P_blVahLTD0 - токен вашего бота, полученный ранее */
 
 
-$mode = 'dev';
+$mode = 'prod';
 
 if($mode === 'dev') {
   $token = "6149169481:AAFA0g0FJdGeENMDKIcJLGGPDos3VCw8tUg";
@@ -39,24 +39,39 @@ $secretKey = "6LfBwiYkAAAAAKwYHN9DNzK_CSfnVrq-MZwcHsw5";
 // post request to server
 $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$captcha.'&remoteip='.$ip;
 $request = file_get_contents($url);
-$response = json_decode($request, true);
-$responseRaw = $debug = var_export($response, true);
+// $response = json_decode($request, true);
+$response = array (
+  'success' => false,
+  'error-codes' => 
+  array (
+    0 => 'invalid-input-response',
+  ),
+);
+$responseRaw = var_export($response, true);
 
 
 
 
 $success = $response['success'];
-$action = $response['action'];
-$score = $response['score'];
+
+if(isset($response['score'])){
+  $score = $response['score'];
+}
+
+
+if(isset($response['error-codes'][0])) { 
+  $error = isset($response['error-codes'][0]);
+};
 
 $spamNames = array('qapush');
 
 $txt .= "&#10; ----------- &#10;";
 $txt .= "<b>IP: </b> ". $ip . "&#10;";
-$txt .= "<b>Spam score (if available): </b> ". $score . "&#10;";
+if(isset($score)) { $txt .= "<b>Spam score (if available): </b> ". $score . "&#10;"; }
 $txt .= "<b>Metadata: </b> ". $responseRaw . "&#10;";
 $txt .= "<b>S: </b> ". $success . "&#10;";
 $txt .= "<b>Typeof s: </b> ". gettype($success) . "&#10;";
+if(isset($errorCodes)) { $txt .= "<b>Error code: </b> ". gettype($errorCodes) . "&#10;"; }
 $msg = urlencode($txt);
 
 
@@ -92,6 +107,12 @@ if ( $success && in_array($name, $spamNames) || $success && $score < 0.5) {
   } else {
       echo json_encode(array("status"=>"failure", "spam" => "false"));
   }
-} else {
+} else if (!$success){
+
+  // If captcha failed
+
+  $token = "6149169481:AAFA0g0FJdGeENMDKIcJLGGPDos3VCw8tUg";
+  $chat_id = "-839273264";
+  $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text=spam_sent%0A%0A{$msg}","r");
   echo json_encode(array("status"=>"failure", "spam" => "true"));
 }

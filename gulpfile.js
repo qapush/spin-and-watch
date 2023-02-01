@@ -16,7 +16,7 @@ const files = {
 
 function serve(done) {
   bs.init({
-    proxy: 'localhost:8888',
+    proxy: 'localhost',
   });
   done();
 }
