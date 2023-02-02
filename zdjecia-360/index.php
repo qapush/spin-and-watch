@@ -6,6 +6,10 @@ $data = [
             "folder" => "car",
         ],
         [
+            "sphere" => "Akcesoria",
+            "folder" => "box-small",
+        ],
+        [
             "sphere" => "Elektronika",
             "folder" => "phone",
         ],
@@ -51,44 +55,38 @@ $data = [
     "photo" => [
         [
             "sphere" => "Elektronika",
-            "id" => "budilnik.jpg"
+            "id" => "product-6.jpg"
         ],
+
         [
             "sphere" => "Akcesoria",
-            "id" => "car.jpg"
-        ],
-        [
-            "sphere" => "Odzież",
             "id" => "NewOne_1.jpg"
         ],
         [
-            "sphere" => "Jedzenie",
-            "id" => "контент сайт_5.jpg"
-        ],
-        [
-            "sphere" => "Naczynia",
-            "id" => "контент сайт_10.jpg"
+            "sphere" => "Akcesoria",
+            "id" => "packshot-9.jpg"
         ],
         [
             "sphere" => "Akcesoria",
-            "id" => "корабль 72 кадра_2.jpg"
+            "id" => "bag-1.jpg"
         ],
         [
-            "sphere" => "Naczynia",
-            "id" => "кружка с ложкой_1.jpg"
+            "sphere" => "Akcesoria",
+            "id" => "product-1.jpg"
         ],
         [
-            "sphere" => "Torebki",
-            "id" => "чемодан_3.jpg"
+            "sphere" => "Akcesoria",
+            "id" => "bag-2.jpg"
         ],
         [
-            "sphere" => "Torebki",
-            "id" => "сумка спортивная_6.jpg"
+            "sphere" => "Akcesoria",
+            "id" => "bag-3.jpg"
         ],
         [
-            "sphere" => "Torebki",
-            "id" => "сумка.jpg"
-        ],
+            "sphere" => "Akcesoria",
+            "id" => "product-11.jpg"
+        ]
+       
     ],
 ];
 

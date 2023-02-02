@@ -233,12 +233,13 @@
                         Wykonujemy wideo 360° produktów. Kontent, który pokaże produkt z każdej strony oraz wzbogaci kampanię reklamową.
                     </p>
                </div>
-                <div class="videos-360-description__video w50">
+                <div class="videos-360-description__video">
                     <div class="video-container">
-                        <iframe src data-src="https://www.youtube.com/embed/lCU3gupAYeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <iframe src data-src="https://www.youtube.com/embed/lCU3gupAYeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="video-poster w100 h100 dflex jccenter aicenter">
                             <img src="/assets/img/play.svg" alt="">
-                        </div>
+                        </div> -->
+                        <video src="./assets/video/helmet-360-video.mp4" autoplay loop muted></video>
                     </div>
                     </div>
             </div> 
