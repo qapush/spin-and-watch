@@ -494,8 +494,7 @@ if (document.querySelectorAll('form').length > 0) {
                   if(dataLayer && submissionSpam === 'true') dataLayer.push({'event': 'form-submit-spam'});
                   console.log(typeof submissionSpam, submissionSpam);
                 } else {
-                  formFailure(form);  
-            
+                  formFailure(form);
                 }
               } catch {
                 formFailure(form);  

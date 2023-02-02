@@ -39,14 +39,7 @@ $secretKey = "6LfBwiYkAAAAAKwYHN9DNzK_CSfnVrq-MZwcHsw5";
 // post request to server
 $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$captcha.'&remoteip='.$ip;
 $request = file_get_contents($url);
-// $response = json_decode($request, true);
-$response = array (
-  'success' => false,
-  'error-codes' => 
-  array (
-    0 => 'invalid-input-response',
-  ),
-);
+$response = json_decode($request, true);
 $responseRaw = var_export($response, true);
 
 
