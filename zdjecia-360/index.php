@@ -284,10 +284,7 @@ $sphere = array_unique($unique); //массив со Сферами для по�
             </p>
             <p class="sub-title">Obszary zastosowania treści:</p>
             <div class="area dg">
-                <div class="area-item">
-                    <div class="area-img"><img class="lazy" data-src="../assets/img/about/area1.png" alt=""></div>
-                    <h3 class="area-name">Odzież</h3>
-                </div>
+
                 <div class="area-item">
                     <div class="area-img"><img class="lazy" data-src="../assets/img/about/area2.png" alt=""></div>
                     <h3 class="area-name">Elektronika</h3>
@@ -298,16 +295,13 @@ $sphere = array_unique($unique); //массив со Сферами для по�
                 </div>
                 <div class="area-item">
                     <div class="area-img"><img class="lazy" data-src="../assets/img/about/area4.png" alt=""></div>
-                    <h3 class="area-name">Torebki</h3>
+                    <h3 class="area-name">Akcesoria</h3>
                 </div>
                 <div class="area-item">
                     <div class="area-img"><img class="lazy" data-src="../assets/img/about/area5.png" alt=""></div>
                     <h3 class="area-name">Obuwie</h3>
                 </div>
-                <div class="area-item">
-                    <div class="area-img"><img class="lazy" data-src="../assets/img/about/area6.png" alt=""></div>
-                    <h3 class="area-name">Akcesoria</h3>
-                </div>
+           
             </div>
             <p class="area-more blue">
                 <span></span>
